@@ -1,5 +1,3 @@
-# DualSPHysics Documentation
-
 ***
 NOTICE: This Wiki is under construction.
 ***
