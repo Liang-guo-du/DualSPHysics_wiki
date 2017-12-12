@@ -2,7 +2,6 @@
 2. [Developers and institutions](Developers-and-Institutions)
 3. [SPH formulation](SPH-formulation)
 4. [CPU and GPU implementation](CPU-and-GPU-implementation)
-5. [Running DualSPHysics](Running-DualSPHysics)
 6. [DualSPHysics open source code](DualSPHysics-open-source-code)
 7. [Compiling DualSPHysics](Compiling-DualSPHysics)
 8. [Format Files](Format-Files)
