@@ -23,4 +23,4 @@ DualSPHysics is a code based on the Smoothed Particle Hydrodynamics model SPHysi
 If you have suggestions on the wiki (a new section, corrections or contributions) please notify it into the [Issues section of the repository](https://github.com/DualSPHysics/DualSPHysics/issues). Please include something like [WIKI] into the title to help us prioritize the work.
 
 ## Errors and missing references on the wiki
-This wiki was a translation and compilation of the old PDF guide for DualSPHysics, so it is probable that missing references exists and some errors too. Please, if you encounter any problem use the section [Suggestions and error fixes on the Wiki](#Suggestions-and-error-fixes-on-the-Wiki) to help.
+This wiki was a translation and compilation of the old PDF guide for DualSPHysics, so it is probable that missing references exists and some errors too. Please, if you encounter any problem use the section [Suggestions and error fixes on the Wiki](#suggestions-and-error-fixes-on-the-wiki) to help.
