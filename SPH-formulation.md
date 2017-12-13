@@ -735,7 +735,7 @@ the Floating_Materials.xml.
 More information about DEM implementation can be found in [Canelas, 2015; Canelas
 et al., 2016].
 
-Multi-phase: Two-phase liquid-sediment implementation in DualSPHysics
+###Multi-phase: Two-phase liquid-sediment implementation in DualSPHysics
 
 This guide provides a concise depiction of the multi-phase liquid-sediment model
 implemented in DualSPHysics solver. The model is capable of simulating problems
