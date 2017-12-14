@@ -30,11 +30,15 @@ The use of OpenMP can be also deactivated by commenting the code line in Types.h
 
 ## Linux compilation
 
-Makefiles can be used to compile the code in linux:
-1. `make –f Makefile` full compilation just using make command
-2. `make –f Makefile_cpu` only for CPU
+You can build the project in GNU/Linux using the [Makefile](Source/Makefile) included in the source folder. Follow this steps (for the GPU version):
 
-The result of the compilation is the dualsphysics executable.
+1. Clone this repository into your system
+2. Ensure you have GCC version 4.X installed. Usually there are packages in your distro like `gcc49` that provides the `g++-4.9` executable.
+3. In a terminal, go to the folder `DualSPHysics/SOURCE/DualSPHysics/Source/`
+4. Execute `make clean` to make sure the environment is clean and ready to compile
+5. Execute `make CC=g++-4.9 CPP=g++-4.9 CXX=g++-4.9 LD=g++-4.9 -f ./Makefile`. Be sure to replace `g++-4.9` for the executable name you have in your system (previously installed in step 2)
+
+After compiling you should see a message like `--- Compiled Release GPU/CPU version ---`. Go to `DualSPHysics/EXECS_LINUX/` to check that `DualSPHyiscs_linux64` or `DualSPHyiscsCPU_linux64` is there and build correctly.
 
 To exclude the use of OpenMP you have to remove the flags `–fopenmp` and `-lgomp` in
 the Makefile and comment line `#define _WITHOMP` in Types.h.
