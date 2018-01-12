@@ -104,9 +104,9 @@ Since these values use the initial configuration, any movement of boundaries tha
 implies positions beyond these limits will give us the error ‘boundary particles out the
 domain’. The solutions to solve this problem and to avoid creating larger tanks or
 domains are:
-* defining boundary points <drawpoint> at the minimum and maximum positions
+* defining boundary points `<drawpoint>` at the minimum and maximum positions
 that the particles are expected to reach during the simulation. The option
-<drawpoint> will create a particle at the given location x,y,z.
+`<drawpoint>` will create a particle at the given location x,y,z.
 * using the parameters of DualSPHysics execution mentioned in the answer to
 Question 9.
 
@@ -124,8 +124,8 @@ releases [Domínguez et al., 2015].
 
 Validation of floating using experimental data from [Hadzic et al., 2005], as shown in
 http://dual.sphysics.org/index.php/validation/wavesfloatings/, has been performed only
-for floating objects created with <setdrawmode mode="full" /> or <setdrawmode
-mode="solid" />, therefore the use of these options is suggested. In this way, floating
+for floating objects created with `<setdrawmode mode="full" />` or `<setdrawmode
+mode="solid" />`, therefore the use of these options is suggested. In this way, floating
 particles are created in the faces of the object and inside the object so no particle
 penetration will be observed.
 
@@ -155,16 +155,16 @@ pointmax.y=1).
 Constant ‘b’ appears in the equation of state (Eq. 14). Constant ‘b’ is zero when fluid
 height (hswl) is zero (or fluid particles were not created) or if gravity is zero.
 First, you should check that fluid particles have been created. Possible errors can appear
-in 2-D simulations when the seed point of the option <fillbox> is not located at the
-correct y-position. Other solution is to specify the value of ‘hswl’ in <constantsdef>
-<hswl value="0.8" auto="false" />). When using gravity zero, the value of ‘b’ needs to
-be specified in <constantsdef> (<b value="1.1200e+05" auto="false" />) as occurs in
+in 2-D simulations when the seed point of the option `<fillbox>` is not located at the
+correct y-position. Other solution is to specify the value of ‘hswl’ in `<constantsdef>`
+`<hswl value="0.8" auto="false" />`). When using gravity zero, the value of ‘b’ needs to
+be specified in `<constantsdef>` (`<b value="1.1200e+05" auto="false" />`) as occurs in
 CaseMovingSquare.
 
 ## How can I create a case without gravity?
 
-When using gravity zero, the value of ‘b’ needs to be specified in <constantsdef> (<b
-value="1.1200e+05" auto="false" />) as occurs in CaseMovingSquare. Otherwise, ‘b’ is
+When using gravity zero, the value of ‘b’ needs to be specified in `<constantsdef>` (`<b
+value="1.1200e+05" auto="false" />`) as occurs in CaseMovingSquare. Otherwise, ‘b’ is
 zero and gives the error shown in Question 18.
 
 ## How can I define the speed of sound?
@@ -186,8 +186,8 @@ obtain accurate results.
 
 The file format XML offers several resources to define new general parameters or
 specific properties for different type of particles. In order to load parameters from the
-section <parameters>, the user can mimic how this is also carried out by DualSPHysics.
-If different properties will be defined for different fluid volumes, section <properties>
+section `<parameters>`, the user can mimic how this is also carried out by DualSPHysics.
+If different properties will be defined for different fluid volumes, section `<properties>`
 can be used (that is also explained in the XML guide).
 
 ## How can I store new properties of the particles (e. g. Temperature)?
