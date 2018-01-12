@@ -1,4 +1,4 @@
-1. [Introduction](introduction)
+1. [Introduction](Introduction)
 2. [Developers and institutions](Developers-and-Institutions)
 3. [SPH formulation](SPH-formulation)
 4. [CPU and GPU implementation](CPU-and-GPU-implementation)
