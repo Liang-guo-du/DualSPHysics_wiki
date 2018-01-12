@@ -26,9 +26,11 @@ of the code or are working in functionalities to be updated in future releases.
 
 ### Instituto Superior Tecnico, Lisbon, Portugal
 * Dr Ricardo Canelas
-* Università degli studi di Parma, Italy
+
+### Università degli studi di Parma, Italy
 * Dr Renato Vacondio
-* Universiteit Gent - Flanders Hydraulics Research, Belgium
+
+### Universiteit Gent - Flanders Hydraulics Research, Belgium
 * Dr Corrado Altomare
 
 ### Contributors:
