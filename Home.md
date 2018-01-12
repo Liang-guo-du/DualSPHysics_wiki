@@ -17,7 +17,7 @@ Welcome to the DualSPHysics Wiki. Here you will find documentation and informati
 You'll also find examples to better understand how the application works.
 
 ## What is DualSPHysics
-DualSPHysics is a code based on the Smoothed Particle Hydrodynamics model SPHysics. It is used next to a series of pre-processing and post-processing tools to create complex geometries and easily analyse numerical results.
+DualSPHysics is a code based on the Smoothed Particle Hydrodynamics model SPHysics. It is used in combination with several pre-processing and post-processing tools to create complex geometries and to analyse numerical results.
 
 ## Suggestions and error fixes on the Wiki
 If you have suggestions on the wiki (a new section, corrections or contributions) please notify it into the [Issues section of the repository](https://github.com/DualSPHysics/DualSPHysics/issues). Please include something like [WIKI] into the title to help us prioritize the work.
