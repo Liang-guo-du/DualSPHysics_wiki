@@ -84,7 +84,7 @@ can be written as
 </p>
 
 where Pk and ρk are the pressure and density that correspond to particle k (as evaluated
-at a or b). The viscosity term <a src="https://i.imgur.com/jIBQoNg.png" /> is given by
+at a or b). The viscosity term <a href="https://i.imgur.com/jIBQoNg.png" /> is given by
 
 <p align="center">
 <img src="https://i.imgur.com/PNAdFht.png"/> (8)
