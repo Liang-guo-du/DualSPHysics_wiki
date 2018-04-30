@@ -16,5 +16,5 @@
 <hr>
 Welcome to the DualSPHysics Wiki. Here you will find documentation and information about the DualSPHysics project: codes, structure, workflow, compilation, working exmples, etc.
 
-## Suggestions and found errors in the Wiki
+## Suggestions and errors in the Wiki
 If you have suggestions (a new section, corrections or contributions) please notify it using the [Issues section of the repository](https://github.com/DualSPHysics/DualSPHysics/issues). Please include something like [WIKI] into the title to help us prioritize the work.
