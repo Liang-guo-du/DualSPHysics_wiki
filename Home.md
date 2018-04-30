@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">DualSPHysics is based on the Smoothed Particle Hydrodynamics model named <a href="https://http://www.sphysics.org" target="_blank">SPHysics</a>.</h4>
+<h4 align="center"><a href="https://http://www.dual.sphysics.org" target="_blank">DualSPHysics</a>is based on the Smoothed Particle Hydrodynamics model named <a href="https://http://www.sphysics.org" target="_blank">SPHysics</a>.</h4>
 
 <h4 align="center">The code is developed to study free-surface flow phenomena where Eulerian methods can be difficult to apply, such as waves or impact of dam-breaks on off-shore structures. DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
 
