@@ -55,7 +55,9 @@ In the actual code, the particle data to be stored in the .bi4 files are: id, po
 
 Therefore, in order to store new data arrays in the .bi4 files, the user should follow the example included in the source files of DualSPHysics. The example is included in the function SavePartData() in the file JSph.cpp and shows how to store (in .bi4) an array with pressure of the particles computed starting from density. This example is explained here:
 
-
+<p align="center">
+<img src="https://i.imgur.com/undefined.png"/>
+</p>
 
 The new data arrays introduced by the users in the .bi4 files are recognized by the post-processing tools (PartVTK4, MeasureTool4 y IsoSurface4). If we want to obtain these data in VTK or CSV files, then the option –vars:name should be used.
 
