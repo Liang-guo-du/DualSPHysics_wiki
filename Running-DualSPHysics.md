@@ -10,8 +10,6 @@ Figure 5-1 shows the structure of the content of **DualSPHysics_v4.2.**
 <strong>Figure 5-1.</strong> Directory tree of the DualSPHysics v4.2 package.
 </p>
 
-Figure 5-1 shows the structure of the content of DualSPHysics_v4.2.
-
 **bin:**
 * Contains the binaries executables for **linux** and **windows**. 
 * Some libraries needed for the codes are also included.
