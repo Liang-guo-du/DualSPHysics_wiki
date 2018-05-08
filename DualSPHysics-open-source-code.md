@@ -5,14 +5,15 @@ Thus, users can download the files from DualSPHysics_v4.2/src.
 A complete list of these source files is summarised in Table 6-1. Some files are shared with other codes such as GenCase, BoundaryVTK, PartVTK, PartVTKOut, MeasureTool and IsoSurface. The rest of the files implement the SPH solver, some of them are used both for CPU/GPU executions and others are specific.
 
 <p align="center">
+<strong>Table 6-1.</strong> List of source files of DualSPHysics v4.2 code.
+</p>
+<p align="center">
 <img src="https://i.imgur.com/sLCH6VJ.png"/>
 </p>
 <p align="center">
 <img src="https://i.imgur.com/bSPABnU.png"/>
 </p>
-<p align="center">
-<strong>Table 6-1.</strong> List of source files of DualSPHysics v4.2 code.
-</p>
+
 
 ## COMMON:
 
