@@ -12,28 +12,30 @@ ExternalModelsConversion_GUIDE.pdf
 To add new formulation or changes, the following files (in src/source) are the ones that require your attention:
 
 CPU and GPU executions: 	
-main.cpp
-JCfgRun (.h .cpp)
-JSph (.h .cpp)
-JSphMk (.h .cpp)
-JPartsLoad4 (.h .cpp)
-JPartsOut (.h .cpp)     
-ParticlesDef.h
-Types.h
+* main.cpp
+* JCfgRun (.h .cpp)
+* JSph (.h .cpp)
+* JSphMk (.h .cpp)
+* JPartsLoad4 (.h .cpp)
+* JPartsOut (.h .cpp)     
+* ParticlesDef.h
+* Types.h
 
-For only CPU executions: 	JSphCpu (.h .cpp)
-				JSphCpu (.h .cpp)
-JSphCpuSingle (.h .cpp)
-JCellDivCpu (.h .cpp)
-JCellDivCpuSingle (.h .cpp)
+For only CPU executions: 	
+* JSphCpu (.h .cpp)
+* JSphCpu (.h .cpp)
+* JSphCpuSingle (.h .cpp)
+* JCellDivCpu (.h .cpp)
+* JCellDivCpuSingle (.h .cpp)
 
-For only GPU executions: 	JSphGpu (.h .cpp)
-JSphGpu_ker (.h .cu)
-JSphGpuSingle (.h .cpp)
-JCellDivGpu (.h .cpp)
-JCellDivGpu_ker (.h .cu)
-JCellDivGpuSingle (.h .cpp)
-JCellDivGpuSingle_ker (.h .cu)
+For only GPU executions: 	
+* JSphGpu (.h .cpp)
+* JSphGpu_ker (.h .cu)
+* JSphGpuSingle (.h .cpp)
+* JCellDivGpu (.h .cpp)
+* JCellDivGpu_ker (.h .cu)
+* JCellDivGpuSingle (.h .cpp)
+* JCellDivGpuSingle_ker (.h .cu)
 
 Please read Section 6 for a complete description of these files.
 
