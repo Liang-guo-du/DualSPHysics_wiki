@@ -18,6 +18,7 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 
 
+
 **BSD License**
 
 Copyright (C) 2018 by Dr Jose M. Dominguez.
@@ -39,6 +40,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 
 
+
 **TinyXml License**
 
 www.sourceforge.net/projects/tinyxml
@@ -54,6 +56,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
 
 3. This notice may not be removed or altered from any source distribution.
+
 
 
 
