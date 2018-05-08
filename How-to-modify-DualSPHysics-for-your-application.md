@@ -1,6 +1,6 @@
 **Creating new cases**
 
-There are more information in doc/help that will guide users to create their own cases:
+There are more information in **doc/help** that will guide users to create their own cases:
 * XML_GUIDE_v4.2.pdf
 * ExternalModelsConversion_GUIDE.pdf
 
@@ -9,7 +9,7 @@ There are more information in doc/help that will guide users to create their own
 
 **Source files of the SPH solver**
 
-To add new formulation or changes, the following files (in src/source) are the ones that require your attention:
+To add new formulation or changes, the following files (in **src/source**) are the ones that require your attention:
 
 CPU and GPU executions: 	
 * main.cpp
@@ -53,15 +53,16 @@ The release includes not only the source files of DualSPHysics v4.2 but also the
 
 In the actual code, the particle data to be stored in the .bi4 files are: id, position, velocity and density. Other magnitudes such as mass, pressure, acceleration, vorticity, etc are computed starting from the first ones using the post-processing tools. However, the .bi4 format allows adding new arrays with particle data defined by the user, which can be managed by the post-processing codes.
 
-Therefore, in order to store new data arrays in the .bi4 files, the user should follow the example included in the source files of DualSPHysics. The example is included in the function SavePartData() in the file JSph.cpp and shows how to store (in .bi4) an array with pressure of the particles computed starting from density. This example is explained here:
+Therefore, in order to store new data arrays in the .bi4 files, the user should follow the example included in the source files of DualSPHysics. The example is included in the function _SavePartData()_ in the file **JSph.cpp** and shows how to store (in .bi4) an array with pressure of the particles computed starting from density. This example is explained here:
 
 <p align="center">
 <img src="https://imgur.com/xBXRP3M.png"/>
 </p>
 
-The new data arrays introduced by the users in the .bi4 files are recognized by the post-processing tools (PartVTK4, MeasureTool4 y IsoSurface4). If we want to obtain these data in VTK or CSV files, then the option –vars:name should be used.
+The new data arrays introduced by the users in the .bi4 files are recognized by the post-processing tools (PartVTK4, MeasureTool4 y IsoSurface4). If we want to obtain these data in VTK or CSV files, then the option **–vars:name** should be used.
 
 Following, an example with PartVTK4 to obtain the data “Pressure” is shown:
-PartVTK4_win64.exe –dirin . -savevtk parts –vars:pressure
+
+_PartVTK4_win64.exe –dirin . -savevtk parts –vars:pressure_
 
 
