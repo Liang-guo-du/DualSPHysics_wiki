@@ -1,4 +1,6 @@
-The user can download the package from [http://dual.sphysics.org/index.php/downloads/](http://dual.sphysics.org/index.php/downloads/)
+The user can download the package from [http://dual.sphysics.org/index.php/downloads/](http://dual.sphysics.org/index.php/downloads/).
+
+Figure 5-1 shows the structure of the content of **DualSPHysics_v4.2.**
 
 <p align="center">
 <img width="400px" src="https://i.imgur.com/YuJMXnR.png"/>
@@ -8,7 +10,7 @@ The user can download the package from [http://dual.sphysics.org/index.php/downl
 <strong>Figure 5-1.</strong> Directory tree of the DualSPHysics v4.2 package.
 </p>
 
-Figure 5-1 shows the structure of the content of **DualSPHysics_v4.2.**
+
 
 **bin:**
 * Contains the binaries executables for **linux** and **windows**. 
