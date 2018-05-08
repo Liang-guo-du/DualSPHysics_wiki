@@ -11,7 +11,7 @@ A complete list of these source files is summarised in Table 6-1. Some files are
 <img src="https://i.imgur.com/bSPABnU.png"/>
 </p>
 <p align="center">
-<strong>Figure 6-1.</strong> List of source files of DualSPHysics v4.2 code.
+<strong>Table 6-1.</strong> List of source files of DualSPHysics v4.2 code.
 </p>
 
 ## COMMON:
