@@ -77,7 +77,7 @@ where the subscript denotes an individual particle, <img src="https://i.imgur.co
 ### The Smoothing Kernel
 The performance of an SPH model depends heavily on the choice of the smoothing kernel. Kernels are expressed as a function of the non-dimensional distance between particles (q), given by <img src="https://i.imgur.com/WPAV5NO.png" height="24"> , where r is the distance between any two given particles a and b and the parameter h (the smoothing length) controls the size of the area around particle a in which neighbouring particles are considered. Within DualSPHysics, the user is able to choose from one of the following kernel definitions:
 
-1. Cubic Spline
+1. Cubic Spline [Monaghan and Lattanzio, 1985]
 <p align="center">
 <img src="https://i.imgur.com/jyEuS6x.png"/> (4)
 </p>
@@ -87,7 +87,7 @@ where αD is equal to 10/7πh2 in 2-D and 1/πh3 in 3-D.
 The tensile correction method, proposed by [Monaghan, 2000], is only actively used in
 the cases of a kernel whose first derivative goes to zero with the particle distance q.
 
-2. Quintic
+2. Quintic [Wendland, 1995]
 <p align="center">
 <img src="https://i.imgur.com/g0lkaup.png"/> (5)
 </p>
@@ -192,7 +192,7 @@ where <img src="https://i.imgur.com/noiD8EZ.png" /> where <img src="https://i.im
 ### DeltaSPH
 Within DualSPHysics it is also possible to apply a delta-SPH formulation, that
 introduces a diffusive term to reduce density fluctuations. The state equation describes a
-very stiff density field, and together with the natural disordering of the Lagrangian
+very stiff density field, and together with the natural disordering of the
 particles, high-frequency low amplitude oscillations are found to populate the density
 scalar field [Molteni and Colagrossi, 2009]. DualSPHysics uses a diffusive term in the
 continuity equation, now written as
@@ -202,7 +202,7 @@ continuity equation, now written as
 </p>
 
 This represents the original delta-SPH formulation by [Molteni and Colagrossi, 2009],
-with the free parameter δΦ that needs to be attributed a suitable value. This modification
+with a free parameter that needs to be attributed a suitable value. This modification
 can be explained as the addition of the Laplacian of the density field to the continuity
 equation. [Antuono et al., 2012] has presented a careful analysis of the influence of this
 term in the system, by decomposing the Laplacian operator, observing the converge of
@@ -422,7 +422,7 @@ separate set to the fluid particles. The software currently provides functionali
 impermeable and periodic open boundaries. Methods to allow boundary particles to be
 moved according to fixed forcing functions are also present.
 
-Dynamic Boundary Condition
+##Dynamic Boundary Condition
 
 The Dynamic Boundary Condition (DBC) is the default method provided by
 DualSPHysics [Crespo et al., 2007]. This method sees boundary particles that satisfy the
