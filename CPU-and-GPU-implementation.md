@@ -12,12 +12,14 @@ Detailed information about the CPU and GPU implementation can be found in the pa
 The DualSPHysics code is the result of an optimised implementation using the best
 approaches for CPU and GPU with the accuracy, robustness and reliability shown by
 the SPHysics code. SPH simulations such as those in the SPHysics and DualSPHysics
-codes can be split in three main steps; (i) generation of the neighbour list, (ii)
-computation of the forces between particles (solving momentum and continuity
-equations) and (iii) the update of the physical quantities at the next time step. Thus,
+codes can be split in three main steps; 
+(i) generation of the neighbour list, 
+(ii) computation of the forces between particles (solving momentum and continuity
+equations) and 
+(iii) the update of the physical quantities at the next time step. Thus,
 running a simulation means executing these steps in an iterative manner:
 
-1. Fist step: Neighbour list (Cell-linked list described in [Domínguez et al., 2011]):
+1. First step: Neighbour list (Cell-linked list described in [Domínguez et al., 2011]):
 * Domain is divided into square cells of side 2h (or the size of the kernel domain).
 * A list of particles, ordered according to the cell to which they belong, is generated.
 * All the arrays with the physical variables belonging the particles are reordered
