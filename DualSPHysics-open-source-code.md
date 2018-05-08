@@ -273,7 +273,7 @@ Declares/implements the class that defines the attributes and functions used onl
 Measures time intervals during GPU execution.
 
 ## CPU Source files
-The source file **JSphCpuSingle.cpp** can be better understood with the help of the diagram of calls represented in Figure 6-1. Note that now particle interactions are no longer performed in terms of cells as used in previous versions.
+The source file **JSphCpuSingle.cpp** can be better understood with the help of the diagram of calls represented in Figure 6-1. Note that particle interactions are not performed in terms of cells. In the current version each CPU thread computes all neighbour interactions of a set of particles that can belong to the same cell or not. The cell division of the domain is only used to look for neighbours in an efficient way.
 
 <p align="center">
 <img src="https://i.imgur.com/o7t9E1h.png"/>
