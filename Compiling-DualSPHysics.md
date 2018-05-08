@@ -2,7 +2,7 @@ The code can be compiled for either CPU or CPU&GPU. Please note that both the C+
 
 To run DualSPHysics on a GPU using an executable, only an Nvidia CUDA-enabled GPU card is needed and the latest version of the GPU driver must be installed. However, to compile the source code, the GPU programming language CUDA and nvcc compiler must be installed on your computer. CUDA Toolkit X.X can be downloaded from Nvidia website [http://developer.nvidia.com/cuda-toolkit-XX](http://developer.nvidia.com/cuda-toolkit-XX). CUDA versions from 4.0 till 9.1 have been tested.
 
-Once the C++ compiler (for example gcc) and the CUDA compiler (nvcc) have been installed in your machine, you can download the relevant files from the directory **DualSPHysics_v4.2/src**
+Once the C++ compiler (for example gcc) and the CUDA compiler (nvcc) have been installed in your machine, you can download the relevant files from the directory **DualSPHysics_v4.2/src**.
 
 ## Windows compilation
 In **DualSPHysics_v4.2/src** there are also several folders:
