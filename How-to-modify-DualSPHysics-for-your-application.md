@@ -37,7 +37,7 @@ For only GPU executions:
 * JCellDivGpuSingle (.h .cpp)
 * JCellDivGpuSingle_ker (.h .cu)
 
-Please read Section 6 for a complete description of these files.
+Please read [Section 6](https://github.com/DualSPHysics/DualSPHysics/wiki/DualSPHysics-open-source-code) for a complete description of these files.
 
 <br>
 <br>
