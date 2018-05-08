@@ -1,7 +1,7 @@
 A program named **GenCase** is included to define the initial configuration of the simulation, movement description of moving objects and the parameters of the execution in DualSPHysics. All this information is contained in a definition **input file** in XML format; **Case_Def.xml**. Two **output files** are created after running GenCase: **Case.xml** and **Case.bi4** (the input files for DualSPHysics code). These input (red boxes) and output files (blue boxes) can be observed in Figure 9-1. **Case.xml** contains all the parameters of the system configuration and its execution such as key variables (smoothing length, reference density, gravity, coefficient to calculate pressure, speed of sound…), the number of particles in the system, movement definition of moving boundaries and properties of moving bodies. **Case.bi4** contains the initial state of the particles (number of particles, position, velocity and density) in BINX4 (.bi4) format. Particle geometries created with **GenCase** can be initially checked by visualising in Paraview the files **Case_All.vtk**, **Case_Bound.vtk** and **Case_Fluid.vtk**. Note that **Case_MkCells.vtk** contains planes that represent sets of all particles (grouped with the same mk) with the advantage that this file is one thousand times less heavy to easily visualise huge cases.
 
 <p align="center">
-<img src="https://i.imgur.com/DKO2BeU.png"/>
+<img src="https://i.imgur.com/qrEyGFl.png" width="450px" />
 </p>
 
 <p align="center">
