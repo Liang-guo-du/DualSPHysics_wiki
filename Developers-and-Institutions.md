@@ -1,7 +1,4 @@
-Different countries and institutions collaborate in the development of DualSPHysics.
-The project is mainly led by the Environmental Physics Laboratory (EPHYSLAB) from
-Universidade de Vigo (Spain) and the School of Mechanical, Aerospace and Civil
-Engineering (MACE) from The University of Manchester (UK).
+Different countries and institutions collaborate in the development of DualSPHysics. The project is the result of the collaboration of many organisations from Spain, United Kingdom, Portugal, Belgium and Italy.
 
 The following list includes the researchers that have collaborated in the current version
 of the code or are working in functionalities to be updated in future releases.
