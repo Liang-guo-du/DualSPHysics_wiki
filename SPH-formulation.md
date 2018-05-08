@@ -1,4 +1,5 @@
 # 3. SPH formulation
+
 First, the SPH formulation available on the new DualSPHysics code is summarised.  Users are referred to the relevant publications below:
 * Time integration scheme: Verlet [Verlet, 1967], Symplectic [Leimkhuler, 1996].
 * Variable time step [Monaghan and Kos, 1999].
@@ -72,7 +73,8 @@ where the subscript denotes an individual particle, <img src="https://i.imgur.co
 <img src="https://i.imgur.com/rqu0cyp.png"/> (3)
 </p>
 
-### The Smoothing Kernel
+## 3.1 The Smoothing Kernel
+
 The performance of an SPH model depends heavily on the choice of the smoothing kernel. Kernels are expressed as a function of the non-dimensional distance between particles (q), given by <img src="https://i.imgur.com/WPAV5NO.png" height="24"> , where r is the distance between any two given particles a and b and the parameter h (the smoothing length) controls the size of the area around particle a in which neighbouring particles are considered. Within DualSPHysics, the user is able to choose from one of the following kernel definitions:
 
 1. Cubic Spline [Monaghan and Lattanzio, 1985]
@@ -94,7 +96,7 @@ where αD is equal to 7/4πh2 in 2-D and 21/16πh3 in 3-D.
 In the text that follows, only kernels with an influence domain of 2h (q≤2) are
 considered
 
-### Momentum Equation
+## 3.2 Momentum Equation
 The momentum conservation equation in a continuum is
 
 <p align="center">
@@ -104,7 +106,7 @@ The momentum conservation equation in a continuum is
 where Γ refers to dissipative terms and g is gravitational acceleration. DualSPHysics
 offers different options for including the effects of dissipation.
 
-### Artificial Viscosity
+### 3.2.1 Artificial Viscosity
 The artificial viscosity scheme, proposed by [Monaghan, 1992], is a common method
 within fluid simulation using SPH due primarily to its simplicity. In SPH notation, Eq. 6
 can be written as
@@ -124,7 +126,7 @@ where ab <img src="https://i.imgur.com/TBytuDT.png" /> and <img src="https://i.i
 validation of wave flumes to study wave propagation and wave loadings exerted onto
 coastal structures [Altomare et al., 2015a; 2015c].
 
-### Laminar viscosity and Sub-Particle Scale (SPS) Turbulence
+### 3.2.2 Laminar viscosity and Sub-Particle Scale (SPS) Turbulence
 Laminar viscous stresses in the momentum equation can be expressed as [Lo and Shao,
 2002]
 
@@ -158,7 +160,7 @@ energy, Cs the Smagorinsky constant (0.12), CI=0.0066, <img src="https://i.imgur
 <img src="https://i.imgur.com/RUG9SJF.png"/> (12)
 </p>
 
-### Continuity Equation
+## 3.3 Continuity Equation
 Throughout the duration of a weakly-compressible SPH simulation (as presented
 herein) the mass of each particle remains constant and only their associated density
 fluctuates. These density changes are computed by solving the conservation of mass, or
