@@ -937,7 +937,8 @@ More information about this multi-phase implementation can be also found in
 
 ### Multi-phase: Two-phase liquid-gas implementation in DualSPHysics
 
-Please read “DualSPHysics_v4.0_LiquidGas_GUIDE.pdf” (in doc\guides)
+Please read “DualSPHysics_v4.0_LiquidGas_GUIDE.pdf” (in doc\guides).
+
 The following test cases are included in the multi-phase DualSPHysics code
 
 <p align="center">
