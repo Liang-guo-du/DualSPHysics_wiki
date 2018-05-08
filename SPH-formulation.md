@@ -422,7 +422,7 @@ separate set to the fluid particles. The software currently provides functionali
 impermeable and periodic open boundaries. Methods to allow boundary particles to be
 moved according to fixed forcing functions are also present.
 
-##Dynamic Boundary Condition
+## Dynamic Boundary Condition
 
 The Dynamic Boundary Condition (DBC) is the default method provided by
 DualSPHysics [Crespo et al., 2007]. This method sees boundary particles that satisfy the
