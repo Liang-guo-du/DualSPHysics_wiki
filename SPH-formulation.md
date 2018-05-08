@@ -1,3 +1,4 @@
+# 3. SPH formulation
 
 First, the SPH formulation available on the new DualSPHysics code is summarised.  Users are referred to the relevant publications below:
 * Time integration scheme: Verlet [Verlet, 1967], Symplectic [Leimkhuler, 1996].
@@ -169,7 +170,7 @@ continuity equation, in SPH form:
 <img src="https://i.imgur.com/FiRiMTm.png"/> (13)
 </p>
 
-### Equation of State
+## 3.4 Equation of State
 Following the work of [Monaghan, 1994], the fluid in the SPH formalism defined in
 DualSPHysics is treated as weakly compressible and an equation of state is used to
 determine fluid pressure based on particle density. The compressibility is adjusted so that
@@ -188,7 +189,7 @@ density follows the expression
 
 where <img src="https://i.imgur.com/noiD8EZ.png" /> where <img src="https://i.imgur.com/b9ppfL9.png" /> is the reference density and <img src="https://i.imgur.com/xDA7oho.png" /> which is the speed of sound at the reference density.
 
-### DeltaSPH
+## 3.5 DeltaSPH
 Within DualSPHysics it is also possible to apply a delta-SPH formulation, that
 introduces a diffusive term to reduce density fluctuations. The state equation describes a
 very stiff density field, and together with the natural disordering of the
@@ -217,7 +218,7 @@ but involve the solution of a renormalization problem for the density gradient, 
 considerable computational cost. A delta-SPH (δΦ) coefficient of 0.1 is recommended
 for most applications.
 
-### Shifting algorithm
+## 3.6 Shifting algorithm
 Anisotropic particle spacing is an important stability issue in SPH as, especially in
 violent flows, particles cannot maintain a uniform distribution. The result is the
 introduction of noise in the velocity and pressure field, as well as the creation of voids
@@ -331,7 +332,8 @@ free surface correction is:
 
 More information about the shifting implementation can be found in [Mokos, 2013].
 
-### Time stepping
+## 3.7 Time stepping
+
 DualSPHysics includes a choice of numerical integration schemes, if the momentum
 ( a v ), density ( aρ ) and position ( ar ) equations are first written in the form
 
@@ -351,7 +353,7 @@ These equations are integrated in time using a computationally simple Verlet bas
 scheme or a more numerically stable but computationally intensive two-stage
 Symplectic method.
 
-### Verlet Scheme
+###  3.7.1 Verlet Scheme
 
 This algorithm, which is based on the common Verlet method [Verlet, 1967] is split into
 two parts and benefits from providing a low computational overhead compared to some
@@ -379,7 +381,7 @@ increase this frequency beyond Ns = 10 then this could indicate that the scheme 
 able to capture the dynamics of the case in hand suitably and the Symplectic scheme
 should be used instead.
 
-### Symplectic Scheme
+###  3.7.2 Symplectic Scheme
 Symplectic integration algorithms are time reversible in the absence of friction or
 viscous effects [Leimkuhler, 1996]. They can also preserve geometric features, such as
 the energy time-reversal symmetry present in the equations of motion, leading to
@@ -403,7 +405,7 @@ During the corrector stage <img src="https://i.imgur.com/5Q2jRFx.png" /> is used
 and finally the corrected value of density <img src="https://i.imgur.com/8L1BQ6U.png" /> is calculated using the
 updated values of <img src="https://i.imgur.com/LRxMXgJ.png" /> and <img src="https://i.imgur.com/brH2R8E.png" /> [Monaghan, 2005].
 
-### Variable Time Step
+### 3.7.3 Variable Time Step
 With explicit time integration schemes the timestep is dependent on the Courant-
 Friedrichs-Lewy (CFL) condition, the forcing terms and the viscous diffusion term. A
 variable time step Δt is calculated according to [Monaghan et al., 1999] using
@@ -415,13 +417,13 @@ variable time step Δt is calculated according to [Monaghan et al., 1999] using
 where Δtf is based on the force per unit mass (|fa|), and Δtcv combines the Courant and
 the viscous time step controls.
 
-### Boundary Conditions
+## 3.8 Boundary Conditions
 In DualSPHysics, the boundary is described by a set of particles that are considered as a
 separate set to the fluid particles. The software currently provides functionality for solid
 impermeable and periodic open boundaries. Methods to allow boundary particles to be
 moved according to fixed forcing functions are also present.
 
-#### Dynamic Boundary Condition
+### 3.8.1 Dynamic Boundary Condition
 
 The Dynamic Boundary Condition (DBC) is the default method provided by
 DualSPHysics [Crespo et al., 2007]. This method sees boundary particles that satisfy the
@@ -443,7 +445,7 @@ variable time step is calculated.
 
 Note that different boundary conditions have been tested in DualSPHysics in the work of [Domínguez et al., 2015]. 
 
-#### Periodic Open Boundary Condition
+### 3.8.2 Periodic Open Boundary Condition
 
 DualSPHysics provides support for open boundaries in the form of a periodic boundary
 condition. This is achieved by allowing particles that are near an open lateral boundary
@@ -454,7 +456,7 @@ In effect, the compact support kernel of a particle is clipped by the nearest op
 boundary and the remainder of its clipped support applied at the complimentary open
 boundary [Gómez-Gesteira et al., 2012a].
 
-#### Pre-imposed Boundary Motion
+### 3.8.3 Pre-imposed Boundary Motion
 
 Within DualSPHysics it is possible to define a pre-imposed movement for a set of
 boundary particles. Various predefined movement functions are available as well as the
@@ -464,7 +466,7 @@ than being fixed, they move independently of the forces currently acting upon th
 This provides the ability to define complex simulation scenarios (i.e. a wave-making
 paddle) as the boundaries influence the fluid particles appropriately as they move.
 
-#### Fluid-driven Objects
+### 3.8.4 Fluid-driven Objects
 
 It is also possible to derive the movement of an object by considering its interaction
 with fluid particles and using these forces to drive its motion. This can be achieved by
@@ -507,11 +509,11 @@ Each boundary particle within the body then has a velocity given by
 
 Finally, the boundary particles within the rigid body are moved by integrating Eq. 34 in time. The works of [Monaghan et al., 2003] and [Monaghan, 2005] show that this technique conserves both linear and angular momentum. [Bouscasse et al., 2013] presented successful validations of nonlinear water wave interaction with floating bodies in SPH comparing with experimental data from [Hadzić et al., 2005] that includes deformations in the free-surface due to the presence of floating boxes and the movement of those objects during the experiment (heave, surge and roll displacements). Several validations using DualSPHysics are performed in [Canelas et al., 2015] that analyse the buoyancy-driven motion with solid objects larger than the smallest flow scales and with various densities. They compared SPH numerical results with analytical solutions, with other numerical methods [Fekken, 2004] and with experimental measurements.
 
-### Wave Generation
+## 3.9 Wave Generation
 
 Wave generation is included in this version of DualSPHysics, which includes piston- and flap-type long-crested wave generation. In this way, the numerical model can be used to simulate a physical wave flume. Both monochromatic (regular) and random waves can be generated. Second-order correction for bound long waves (sub-harmonics) is implemented for random waves with piston-type wave maker only. For regular waves, second-order correction (super-harmonics) is implemented for both piston- and flap-type wavemaker. The following sections refer only to the piston-type wavemaker. 
 
-#### First order wave generation
+### 3.9.1 First order wave generation
 
 The Biesel transfer functions express the relation between wave amplitude and
 wavemaker displacement [Biesel and Suquet, 1951], under the assumption of
@@ -544,7 +546,7 @@ piston movement is given by:
 <img src="https://i.imgur.com/IrxhSZv.png"/> (37)
 </p>
 
-#### Second-order wave generation for monochromatic waves
+### 3.9.2 Second-order wave generation for monochromatic waves
 
 The implementation of a second order wavemaker theory will prevent the generation of
 spurious secondary waves. The second order wave generation theory implemented in
@@ -579,7 +581,7 @@ waves that complied with the condition given by HL2/d3 < 8π2/3. A specific warn
 implemented in DualSPHysics to inform the user whether or not this condition is
 fulfilled.
 
-#### First order wave generation of irregular waves
+### 3.9.3 First order wave generation of irregular waves
 
 Monochromatic waves are not representative of sea states that characterise real wave
 storm conditions. Sea waves are mostly random or irregular in nature. Irregular wave
@@ -644,17 +646,17 @@ A phase seed is also used and can be changed in DualSPHysics to obtain different
 random series of δi. Changing the phase seed allows generating different irregular wave
 time series both with the same significant wave height (Hm0) and peak period (Tp).
 
-#### Second-order bound long waves
+### 3.9.4 Second-order bound long waves
 
 When natural waves are reproduced in a laboratory or in a numerical model the wave generator is normally controlled by a first-order signal. The wave set-down (bound long waves) generates drift velocities directed landwards under the crests and seawards under the troughs [Ottesen-Hansen et al., 1980]. However, at the wavemaker, there is no flow through the paddle, therefore the natural drift velocities are compensated by identical ones with opposite signs. The latter velocities create a progressive long wave that is not bound anymore but free. This phenomenon is called parasitic long waves and it results in an exaggeration of the long wave effects. Second-order wave generation is required in order to cancel out this parasitic long wave to achieve the drift velocities that characterise the set-down. Another long wave, called displacement long wave, is caused by finite wavemaker displacements away from the mean position. 
 
 The correction of the first-order wave generation at the wavemaker must be capable of compensating both parasitic long waves and displacement long waves. The method implemented in DualSPHysics is based on the solution for the control signal of the wavemaker that is described in [Barthel et al., 1993].
 
-### Passive and Active wave absorption 
+## 3.10 Passive and Active wave absorption 
 
 The use of wave absorption allows generating long time series of sea waves in relatively short domains with negligible wave reflection. Wave absorption techniques can be categorized as passive and active, respectively. Passive wave absorbers are usually required to damp the wave energy and to reduce reflection exerted by the boundary of the model domain. In active absorption systems, the wavemaker real-time displacement is corrected to cancel out the reflected waves and to damp the re-reflection phenomenon. Active wave absorption is implemented in DualSPHysics for a piston-type wavemaker only.
 
-#### Passive wave absorption 
+### 3.10.1 Passive wave absorption 
 
 A damping zone is implemented in DualSPHysics as passive absorption system. The implemented damping system consists in gradually reducing the velocity of the particles at each time step according to their location, but using quadratic decay rather than exponential. In this way, the velocity is modified following
 
@@ -670,7 +672,7 @@ where v0 is the initial velocity of the particle i, v is the final velocity and 
 
 where Δt is the duration of the last time step, x is position of the particles, x0 and x1 are the initial and final position of the damping zone, respectively. It is recommended to use one wavelength, L, as the length of the damping zone. The coefficient β modifies the reduction function that is applied to the velocity.
 
-#### Active wave absorption 
+### 3.10.2 Active wave absorption 
 
 The active wave absorption system implemented in DualSPHysics is based on the time-domain filtering technique that uses the free-surface elevation at the wavemaker position as feedback for the control of the wavemaker displacement. The target wavemaker position e(t) is corrected in real time in order to avoid reflection at the wavemaker. It is necessary to estimate the free-surface elevation of the reflected waves, ηR, to be absorbed, by comparing the target incident free-surface elevation, ηI, with the measured one in front of the wavemaker, ηSPH. This is measured at 4-10·hSPH from the wavemaker. The reflected free-surface elevation can be expressed as
 
@@ -704,7 +706,7 @@ The wavemaker position at t+dt is then corrected using the following expression
 
 Small deviations of the mean water level from the zero can imply accumulations in time leading to a drift of the wavemaker from its initial position that will grow indefinitely. In order to prevent this drift, the wavemaker should be forced back to its zero position. Hence, a drift correction algorithm is implemented in the code. The algorithm checks when the 80% of the maximum forward or backward stroke is reached (80% was assumed as default value but it can be modified by the user). If this happens the wave board is pushed/pulled slowly back, while continuing to generate the target waves, in such a way that its average position will finally correspond to its initial zero-position (i.e. at the beginning of the simulation). A smoothed transition, in form of a power function, is used to prevent abrupt changes in the wavemaker displacement.
 
-### Coupling with Discrete Element Method (DEM)
+## 3.11 Coupling with Discrete Element Method (DEM)
 
 The discrete element method (DEM) allows for the computation of rigid particle
 dynamics, by considering contact laws to account for interaction forces. The coupled
@@ -810,7 +812,7 @@ the Floating_Materials.xml.
 More information about DEM implementation can be found in [Canelas, 2015; Canelas
 et al., 2016].
 
-### Multi-phase: Two-phase liquid-sediment implementation in DualSPHysics
+## 3.12 Multi-phase: Two-phase liquid-sediment implementation in DualSPHysics
 
 This guide provides a concise depiction of the multi-phase liquid-sediment model
 implemented in DualSPHysics solver. The model is capable of simulating problems
@@ -821,7 +823,7 @@ fully saturated sediment. Applications include scouring in industrial tanks, por
 hydrodynamics, wave breaking in coastal applications and scour around structures in
 civil and environmental engineering flows among others.
 
-#### Description of the physical problem
+### 3.12.1 Description of the physical problem
 
 A typical saturated sediment scour induced by rapid liquid flow at the interface
 undergoes a number of different behavioural regime changes mostly govern by the
@@ -857,7 +859,7 @@ Finally, the characteristics of the low concentration suspended sediment that ha
 entrained by the liquid are modelled using a volumetric concentration based viscosity in
 a pseudo-Newtonian approach by employing the Vand equation.
 
-#### Sediment phase
+### 3.12.2 Sediment phase
 
 The yield surface prediction is modelled using the Drucker-Prager (DP) model. The DP
 can be written in a general form as [Fourtakas and Rogers, 2016]
@@ -934,7 +936,7 @@ within the SPH kernel is lower than 0.3, which is the upper validity limit of Eq
 More information about this multi-phase implementation can be also found in
 [Fourtakas, 2014; Fourtakas and Rogers, 2016].
 
-### Multi-phase: Two-phase liquid-gas implementation in DualSPHysics
+## 3.13 Multi-phase: Two-phase liquid-gas implementation in DualSPHysics
 
 Please read “DualSPHysics_v4.0_LiquidGas_GUIDE.pdf” (in doc\guides).
 
