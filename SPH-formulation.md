@@ -1,21 +1,37 @@
 First, the SPH formulation available on the new DualSPHysics code is summarised.  Users are referred to the relevant publications below:
 
 •	Time integration scheme: Verlet [Verlet, 1967], Symplectic [Leimkhuler, 1996].
+
 •	Variable time step [Monaghan and Kos, 1999].
+
 •	Kernel functions: Cubic Spline kernel [Monaghan and Lattanzio, 1985], Quintic Wendland kernel [Wendland, 1995], Gaussian kernel.
+
 •	Density treatment: Delta-SPH formulation [Molteni and Colagrossi, 2009].
+
 •	Viscosity treatments: Artificial viscosity [Monaghan, 1992], Laminar viscosity + SPS turbulence model [Dalrymple and Rogers, 2006].
+
 •	Weakly compressible approach using Tait’s equation of state.
+
 •	Shifting algorithm [Lind et al., 2012].
+
 •	Dynamic boundary conditions [Crespo et al., 2007].
+
 •	Floating objects [Monaghan et al., 2003]. 
-•	Periodic open boundaries [Gómez-Gesteira et al., 2012a]
+
+•	Periodic open boundaries [Gómez-Gesteira et al., 2012a].
+
 •	Coupling with Discrete Element Method [Canelas et al., 2016].
+
 •	External body forces [Longshaw and Rogers, 2015].
+
 •	Double precision [Domínguez et al., 2013c].
-•	Piston- and flap-type long-crested second-order wave generation 
+
+•	Piston- and flap-type long-crested second-order wave generation.
+ 
 •	Passive and Active Wave Absorption System [Altomare et al., 2017].
+
 •	Multi-phase (liquid-sediment) [Fourtakas and Rogers, 2016] – executable only.
+
 •	Multi-phase (liquid-gas) [Mokos et al., 2015].
 
 Features that will be integrated soon on the CPU-GPU solver as future improvements:
