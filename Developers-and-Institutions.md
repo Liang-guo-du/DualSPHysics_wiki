@@ -20,6 +20,7 @@ of the code or are working in functionalities to be updated in future releases.
 * Dr Benedict D. Rogers
 * Dr Georgios Fourtakas
 * Dr Athanasios Mokos
+* Professor Peter Stansby
 
 ### Science & Technology Facilities Council, UK
 * Dr Stephen Longshaw
@@ -37,3 +38,4 @@ of the code or are working in functionalities to be updated in future releases.
 * Imperial College London, UK. Mashy D Green
 * Universidad Politécnica de Madrid, Spain. Jose Luis Cercós Pita.
 * Universidad de Guanajuato, Mexico. Carlos Enrique Alvarado Rodríguez.
+* New York University Tandon School of Engineering, USA. Dr Angelo Tafuni
