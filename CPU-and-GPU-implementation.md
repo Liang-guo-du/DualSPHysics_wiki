@@ -51,14 +51,7 @@ DualSPHysics is unique where the same application can be run using either the CP
 </p>
 
 ### Double Precision
-The parallel computing power of Graphics Processing Units (GPUs) has led to an
-important increase in the size of the simulations but problems of precision can appear
-when simulating large domains with high resolution (specially in 2-D simulations).
-Hence, there are numerous simulations that require a small particle size “dp” relative to
-the computational domain [Domínguez et al., 2013c], namely fine resolution or long
-domains. DualSPHysics v4.0 now includes an implementation with double precision
-where necessary. For example, arrays of position now use double precision and
-updating state of particles is also implemented with double precision.
+The parallel computing power of Graphics Processing Units (GPUs) has led to an important increase in the size of the simulations but problems of precision can appear when simulating large domains with high resolution (especially in 2-D simulations). Hence, there are numerous simulations that require a small particle size “dp” relative to the computational domain [Domínguez et al., 2013c], namely fine resolution or long domains. Since DualSPHysics an implementation with double precision is included. For example, arrays of position now use double precision and updating state of particles is also implemented with double precision.
 
 ### OpenMP for multi-core executions.
 In the new version, the CPU implementation aims to achieve a higher performance in
