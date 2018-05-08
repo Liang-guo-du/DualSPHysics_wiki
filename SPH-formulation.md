@@ -35,15 +35,15 @@ First, the SPH formulation available on the new DualSPHysics code is summarised.
 •	Multi-phase (liquid-gas) [Mokos et al., 2015].
 
 Features that will be integrated soon on the CPU-GPU solver as future improvements:
-•	Inlet/outlet flow conditions [Tafuni et al., 2017].
-•	Coupling with Project Chrono [Canelas et al., 2018].
-•	Coupling with MoorDyn library
-•	Coupling with SWASH Wave Propagation Model [Altomare et al., 2015].
-•	Multi-GPU implementation [Domínguez et al., 2013b].
-•	Variable particle resolution [Vacondio et al., 2013].
-•	Local Uniform Stencil (LUST) boundary conditions [Fourtakas et al., 2014].
-•	Boundary Integral conditions [Domínguez et al., 2015].
-•	Incompressible SPH [Chow et al., 2018].
+* Inlet/outlet flow conditions [Tafuni et al., 2017].
+* Coupling with Project Chrono [Canelas et al., 2018].
+* Coupling with MoorDyn library
+* Coupling with SWASH Wave Propagation Model [Altomare et al., 2015].
+* Multi-GPU implementation [Domínguez et al., 2013b].
+* Variable particle resolution [Vacondio et al., 2013].
+* Local Uniform Stencil (LUST) boundary conditions [Fourtakas et al., 2014].
+* Boundary Integral conditions [Domínguez et al., 2015].
+* Incompressible SPH [Chow et al., 2018].
 
 
 ### SPH formulation
