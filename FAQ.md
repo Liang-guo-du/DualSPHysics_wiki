@@ -1,1 +1,1 @@
-http://dual.sphysics.org/index.php/faq/
+Please visit: http://dual.sphysics.org/index.php/faq/
