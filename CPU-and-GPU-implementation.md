@@ -2,14 +2,11 @@
 
 Detailed information about the CPU and GPU implementation can be found in the papers:
 
-Crespo AJC, Domínguez JM, Rogers BD, Gómez-Gesteira M, Longshaw S, Canelas R, Vacondio R, Barreiro A, García-Feal O. 2015. DualSPHysics: open-source parallel CFD solver on Smoothed Particle Hydrodynamics (SPH). Computer Physics Communications, 187: 204-216. doi: 10.1016/j.cpc.2014.10.004
-
-Domínguez JM, Crespo AJC, Valdez-Balderas D, Rogers BD. and Gómez-Gesteira M. 2013. New multi-GPU implementation for Smoothed Particle Hydrodynamics on heterogeneous clusters. Computer Physics Communications, 184: 1848-1860. doi: 10.1016/j.cpc.2013.03.008
-
-Domínguez JM, Crespo AJC and Gómez-Gesteira M. 2013. Optimization strategies for CPU and GPU implementations of a smoothed particle hydrodynamics method. Computer Physics Communications, 184(3): 617-627. doi:10.1016/j.cpc.2012.10.015
-Crespo AJC, Domínguez JM, Barreiro A, Gómez-Gesteira M and Rogers BD. 2011.  GPUs, a new tool of acceleration in CFD: Efficiency and reliability on Smoothed Particle Hydrodynamics methods. PLoS ONE, 6(6), e20685. doi:10.1371/journal.pone.0020685
-
-Domínguez JM, Crespo AJC, Gómez-Gesteira M, Marongiu, JC. 2011. Neighbour lists in Smoothed Particle Hydrodynamics. International Journal For Numerical Methods in Fluids, 67(12): 2026-2042. doi: 10.1002/fld.2481
+* Crespo AJC, Domínguez JM, Rogers BD, Gómez-Gesteira M, Longshaw S, Canelas R, Vacondio R, Barreiro A, García-Feal O. 2015. DualSPHysics: open-source parallel CFD solver on Smoothed Particle Hydrodynamics (SPH). Computer Physics Communications, 187: 204-216. doi: 10.1016/j.cpc.2014.10.004
+* Domínguez JM, Crespo AJC, Valdez-Balderas D, Rogers BD. and Gómez-Gesteira M. 2013. New multi-GPU implementation for Smoothed Particle Hydrodynamics on heterogeneous clusters. Computer Physics Communications, 184: 1848-1860. doi: 10.1016/j.cpc.2013.03.008
+* Domínguez JM, Crespo AJC and Gómez-Gesteira M. 2013. Optimization strategies for CPU and GPU implementations of a smoothed particle hydrodynamics method. Computer Physics Communications, 184(3): 617-627. doi:10.1016/j.cpc.2012.10.015
+* Crespo AJC, Domínguez JM, Barreiro A, Gómez-Gesteira M and Rogers BD. 2011.  GPUs, a new tool of acceleration in CFD: Efficiency and reliability on Smoothed Particle Hydrodynamics methods. PLoS ONE, 6(6), e20685. doi:10.1371/journal.pone.0020685
+* Domínguez JM, Crespo AJC, Gómez-Gesteira M, Marongiu, JC. 2011. Neighbour lists in Smoothed Particle Hydrodynamics. International Journal For Numerical Methods in Fluids, 67(12): 2026-2042. doi: 10.1002/fld.2481
 
 
 The DualSPHysics code is the result of an optimised implementation using the best
