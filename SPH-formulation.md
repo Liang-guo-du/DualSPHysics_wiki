@@ -822,7 +822,7 @@ fully saturated sediment. Applications include scouring in industrial tanks, por
 hydrodynamics, wave breaking in coastal applications and scour around structures in
 civil and environmental engineering flows among others.
 
-Description of the physical problem
+#### Description of the physical problem
 
 A typical saturated sediment scour induced by rapid liquid flow at the interface
 undergoes a number of different behavioural regime changes mostly govern by the
@@ -858,7 +858,7 @@ Finally, the characteristics of the low concentration suspended sediment that ha
 entrained by the liquid are modelled using a volumetric concentration based viscosity in
 a pseudo-Newtonian approach by employing the Vand equation.
 
-Sediment phase
+#### Sediment phase
 
 The yield surface prediction is modelled using the Drucker-Prager (DP) model. The DP
 can be written in a general form as [Fourtakas and Rogers, 2016]
@@ -934,3 +934,16 @@ within the SPH kernel is lower than 0.3, which is the upper validity limit of Eq
 
 More information about this multi-phase implementation can be also found in
 [Fourtakas, 2014; Fourtakas and Rogers, 2016].
+
+### Multi-phase: Two-phase liquid-gas implementation in DualSPHysics
+
+Please read “DualSPHysics_v4.0_LiquidGas_GUIDE.pdf” (in doc\guides)
+The following test cases are included in the multi-phase DualSPHysics code
+
+<p align="center">
+<img src="https://i.imgur.com/NA4h81H.png"/>
+</p>
+
+<p align="center">
+<img src="https://i.imgur.com/YDBigRk.png"/>
+</p>
