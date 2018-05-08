@@ -6,7 +6,7 @@
 6. [DualSPHysics open-source code](DualSPHysics-open-source-code)
 7. [Compiling DualSPHysics](Compiling-DualSPHysics)
 8. [Format Files](Format-Files)
-9. [Pre-processing (GenCase)](9. Pre‐processing)
+9. [Pre-processing (GenCase)](9.-Pre‐processing)
 10. [Processing (DualSPHysics)](Processing)
 11. [Post-processing](Postprocessing)
 12. [Testcases](Testcases)
