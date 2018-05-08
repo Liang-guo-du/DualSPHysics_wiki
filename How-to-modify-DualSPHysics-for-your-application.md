@@ -1,8 +1,8 @@
 **Creating new cases**
 
 There are more information in doc/help that will guide users to create their own cases:
-XML_GUIDE_v4.2.pdf
-ExternalModelsConversion_GUIDE.pdf
+* XML_GUIDE_v4.2.pdf
+* ExternalModelsConversion_GUIDE.pdf
 
 <br>
 <br>
