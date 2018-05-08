@@ -29,6 +29,7 @@ Features that will be integrated soon on the CPU-GPU solver as future improvemen
 * Incompressible SPH [Chow et al., 2018].
 
 
+
 ### SPH formulation
 Smoothed Particle Hydrodynamics (SPH) is a Lagrangian meshless method. The
 technique discretises a continuum using a set of material points or particles. When used
