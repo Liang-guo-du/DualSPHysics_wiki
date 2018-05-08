@@ -1,15 +1,20 @@
 Next releases are _expected_ to include the following features:
 
+<br>
 
 **DualSPHysics v4.4**
 * Inlet/outlet flow conditions.
 * Coupling with Project Chrono (https://projectchrono.org/).
 * Relaxation Zone method and coupling with wave propagation models.
 * Coupling with MoorDyn library (http://www.matt-hall.ca/moordyn.html).
+
+<br>
  
 **DualSPHysics v4.6**
 * Incompressible SPH.
 * Source code of Multiphase Liquid-Sediment implementation.
+
+<br>
  
 **DualSPHysics v5.0**
 * Multi-GPU implementation.
