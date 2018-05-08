@@ -1,31 +1,16 @@
 ### General Information
 
-Detailed information about the CPU and GPU implementation can be found in the
-papers:
+Detailed information about the CPU and GPU implementation can be found in the papers:
 
-Crespo AJC, Domínguez JM, Rogers BD, Gómez-Gesteira M, Longshaw S, Canelas R, Vacondio R, Barreiro
-A, García-Feal O. 2015. DualSPHysics: open-source parallel CFD solver on Smoothed Particle
-Hydrodynamics (SPH). Computer Physics Communications, 187: 204-216. doi: 10.1016/j.cpc.2014.10.004
+Crespo AJC, Domínguez JM, Rogers BD, Gómez-Gesteira M, Longshaw S, Canelas R, Vacondio R, Barreiro A, García-Feal O. 2015. DualSPHysics: open-source parallel CFD solver on Smoothed Particle Hydrodynamics (SPH). Computer Physics Communications, 187: 204-216. doi: 10.1016/j.cpc.2014.10.004
 
-Domínguez JM, Crespo AJC, Valdez-Balderas D, Rogers BD. and Gómez-Gesteira M. 2013. New multi-GPU
-implementation for Smoothed Particle Hydrodynamics on heterogeneous clusters. Computer Physics
-Communications, 184: 1848-1860. doi: 10.1016/j.cpc.2013.03.008
+Domínguez JM, Crespo AJC, Valdez-Balderas D, Rogers BD. and Gómez-Gesteira M. 2013. New multi-GPU implementation for Smoothed Particle Hydrodynamics on heterogeneous clusters. Computer Physics Communications, 184: 1848-1860. doi: 10.1016/j.cpc.2013.03.008
 
-Domínguez JM, Crespo AJC and Gómez-Gesteira M. 2013. Optimization strategies for CPU and GPU
-implementations of a smoothed particle hydrodynamics method. Computer Physics Communications, 184(3):
-617-627. doi:10.1016/j.cpc.2012.10.015
+Domínguez JM, Crespo AJC and Gómez-Gesteira M. 2013. Optimization strategies for CPU and GPU implementations of a smoothed particle hydrodynamics method. Computer Physics Communications, 184(3): 617-627. doi:10.1016/j.cpc.2012.10.015
+Crespo AJC, Domínguez JM, Barreiro A, Gómez-Gesteira M and Rogers BD. 2011.  GPUs, a new tool of acceleration in CFD: Efficiency and reliability on Smoothed Particle Hydrodynamics methods. PLoS ONE, 6(6), e20685. doi:10.1371/journal.pone.0020685
 
-Valdez-Balderas D, Domínguez JM, Rogers BD, Crespo AJC. 2012. Towards accelerating smoothed particle
-hydrodynamics simulations for free-surface flows on multi-GPU clusters. Journal of Parallel and Distributed
-Computing. doi:10.1016/j.jpdc.2012.07.010
+Domínguez JM, Crespo AJC, Gómez-Gesteira M, Marongiu, JC. 2011. Neighbour lists in Smoothed Particle Hydrodynamics. International Journal For Numerical Methods in Fluids, 67(12): 2026-2042. doi: 10.1002/fld.2481
 
-Crespo AJC, Domínguez JM, Barreiro A, Gómez-Gesteira M and Rogers BD. 2011. GPUs, a new tool of
-acceleration in CFD: Efficiency and reliability on Smoothed Particle Hydrodynamics methods. PLoS ONE,
-6(6), e20685. doi:10.1371/journal.pone.0020685
-
-Domínguez JM, Crespo AJC, Gómez-Gesteira M, Marongiu, JC. 2011. Neighbour lists in Smoothed Particle
-Hydrodynamics. International Journal For Numerical Methods in Fluids, 67(12): 2026-2042. doi:
-10.1002/fld.2481
 
 The DualSPHysics code is the result of an optimised implementation using the best
 approaches for CPU and GPU with the accuracy, robustness and reliability shown by
@@ -52,34 +37,11 @@ variables at the present or previous time steps using the particle interactions.
 * Particle information (velocity and density) are saved on local storage (the hard
 drive) at defined times.
 
-The GPU implementation is focused on the force computation since following
-[Domínguez et al., 2011] this is the most consuming part in terms of runtime. However
-the most efficient technique consists of minimising the communications between the
-CPU and GPU for the data transfers. If neighbour list and system update are also
-implemented on the GPU the CPU-GPU memory transfer is needed at the beginning of
-the simulation while relevant data will be transferred to the CPU when saving output
-data is required (usually infrequently). [Crespo et al., 2011] used an execution of
-DualSPHysics performed entirely on the GPU to run a numerical experiment where the
-results are in close agreement with the experimental results.
+The GPU implementation is focused on the force computation since following [Domínguez et al., 2011] this is the most consuming part in terms of runtime. However the most efficient technique consists of minimising the communications between the CPU and GPU for the data transfers. If neighbour list and system update are also implemented on the GPU the CPU-GPU memory transfer is needed at the beginning of the simulation while relevant data will be transferred to the CPU when saving output data is required (usually infrequently). [Crespo et al., 2011] used an execution of DualSPHysics performed entirely on the GPU to run a numerical experiment where the results are in close agreement with the experimental results.
 
-The GPU implementation presents some key differences in comparison to the CPU
-version. The main difference is the parallel execution of all tasks that can be parallelised
-such as all loops regarding particles. One GPU execution thread computes the resulting
-force of one particle performing all the interactions with its neighbours. Different to
-previous versions, in version 4.0 onwards, the symmetry of the particle interaction is not
-employed on the CPU, the same as in the GPU implementation. On a GPU it is not
-efficient due to memory coalescence issues. Now, the new CPU structure mimics the
-GPU threads, which ensures continuity of coding and structure (hence ease of
-debugging, etc.) – see Section 6.
+The GPU implementation presents some key differences in comparison to the CPU version. The main difference is the parallel execution of all tasks that can be parallelised such as all loops regarding particles. One GPU execution thread computes the resulting force of one particle performing all the interactions with its neighbours. Different to previous versions, in version 4.0 onwards, the symmetry of the particle interaction is not employed on the CPU, the same as in the GPU implementation.  On a GPU it is not efficient due to memory coalescence issues. Now, the new CPU structure mimics the GPU threads, which ensures continuity of coding and structure (hence ease of debugging, etc.) – see Section 6.
 
-DualSPHysics is unique where the same application can be run using either the CPU or
-GPU implementation; this facilitates the use of the code not only on workstations with
-an Nvidia GPU but also on machines without a CUDA-enabled GPU. The CPU version
-is parallelised using the OpenMP API. The main code has a common core for both the
-CPU and GPU implementations with only minor source code differences implemented
-for the two devices applying the specific optimizations for CPU and GPU. Thus,
-debugging or maintenance is easier and comparisons of results and computational time
-are more direct.
+DualSPHysics is unique where the same application can be run using either the CPU or GPU implementation; this facilitates the use of the code not only on workstations with an Nvidia GPU but also on machines without a CUDA-enabled GPU. The CPU version is parallelised using the OpenMP API. The main code has a common core for both the CPU and GPU implementations with only minor source code differences implemented for the two devices applying the specific optimizations for CPU and GPU. Thus, debugging or maintenance is easier and comparisons of results and computational time are more direct. 
 
 <p align="center">
 <img src="https://i.imgur.com/HsNQmBF.png"/>
@@ -115,14 +77,21 @@ easier since symmetry is removed during force computation such that the CPU code
 more similar to the GPU code which facilitates its comprehension and editing.
 
 ### Optimisation of the size of blocks for execution of CUDA kernels.
-The size of the blocks is a key parameter in the execution of CUDA kernels since it can
-lead to performance differences of 50%. This variation becomes more significant in the
-kernels that compute particle interactions since take more than 90% of the total
-execution time.
+The size of the blocks is a key parameter in the execution of CUDA kernels since it can lead to performance differences of 50%. This variation becomes more significant in the kernels that compute particle interactions since take more than 90% of the total execution time.
 
-The version 4.0 includes a new automatic estimation of the optimum block size of
-CUDA kernels (particle interactions on GPU). This optimum block size depends on: (i)
-features of the kernel (registers and shared memory), (ii) compilation parameters and
-the CUDA version, (iii) hardware to be used and GPU specifications and (iv) input data
-to be processed by the kernel (divergence, memory coalescent access). The CUDA
-Occupancy Calculator is available from CUDA version 6.5.
+Since version 4.0 a new automatic estimation of the optimum block size of CUDA kernels (particle interactions on GPU) is included. This optimum block size depends on: (i) features of the kernel (registers and shared memory), (ii) compilation parameters and the CUDA version, (iii) hardware to be used and GPU specifications and (iv) input data to be processed by the kernel (divergence, memory coalescent access). The CUDA Occupancy Calculator is available from CUDA version 6.5.
+
+It is worth to mention, that the DualSPHysics package includes not only the SPH solver (named DualSPHysics code) but also dedicated pre-processing software (that can use a whole range of different input files for the geometries including CAD, STL, PLY files, etc., making setting up simulations straightforward) and advanced post-processing tools (that allow users to measure physical magnitudes of any flow property at arbitrary locations in the domain).
+
+The figure 4-2 includes the number of code lines of the different codes where:
+* DualSPHysics is the SPH solver
+* GenCase is the pre-processing tool
+* All the others are the post-processing tools
+
+<p align="center">
+<img src="https://i.imgur.com/dSP8QXG.png"/>
+</p>
+
+<p align="center">
+<strong>Figure 4-2.</strong> Number of code lines of DualSPHysics code and the pre- and post-processing tools.
+</p>
