@@ -442,12 +442,9 @@ order to handle the highest present velocity of any fluid particles currently in
 with boundary particles and is therefore an important point when considering how the
 variable time step is calculated.
 
-Different boundary conditions have been tested in DualSPHysics in the work of
-[Domínguez et al., 2015]: Dynamic Boundary Condition (DBC), Local Uniform
-STencil (LUST) and Boundary Integral (INTEGRAL). Validations with dam-break
-flows and sloshing tanks highlighted the advantages and drawbacks of each method.
+Note that different boundary conditions have been tested in DualSPHysics in the work of [Domínguez et al., 2015]. 
 
-Periodic Open Boundary Condition
+#### Periodic Open Boundary Condition
 
 DualSPHysics provides support for open boundaries in the form of a periodic boundary
 condition. This is achieved by allowing particles that are near an open lateral boundary
@@ -458,7 +455,7 @@ In effect, the compact support kernel of a particle is clipped by the nearest op
 boundary and the remainder of its clipped support applied at the complimentary open
 boundary [Gómez-Gesteira et al., 2012a].
 
-Pre-imposed Boundary Motion
+#### Pre-imposed Boundary Motion
 
 Within DualSPHysics it is possible to define a pre-imposed movement for a set of
 boundary particles. Various predefined movement functions are available as well as the
@@ -468,7 +465,7 @@ than being fixed, they move independently of the forces currently acting upon th
 This provides the ability to define complex simulation scenarios (i.e. a wave-making
 paddle) as the boundaries influence the fluid particles appropriately as they move.
 
-Fluid-driven Objects
+#### Fluid-driven Objects
 
 It is also possible to derive the movement of an object by considering its interaction
 with fluid particles and using these forces to drive its motion. This can be achieved by
@@ -509,27 +506,13 @@ Each boundary particle within the body then has a velocity given by
 <img src="https://i.imgur.com/UiKDdyy.png"/> (34)
 </p>
 
-Finally, the boundary particles within the rigid body are moved by integrating Eq. 34 in
-time. The works of [Monaghan et al., 2003] and [Monaghan, 2005] show that this
-technique conserves both linear and angular momentum. [Bouscasse et al., 2013]
-presented successful validations of nonlinear water wave interaction with floating
-bodies in SPH comparing with experimental data from [Hadzić et al., 2005] that
-includes deformations in the free-surface due to the presence of floating boxes and the
-movement of those objects during the experiment (heave, surge and roll displacements).
-Several validations using DualSPHysics are performed in [Canelas et al., 2015] that
-analyse the buoyancy-driven motion with solid objects larger than the smallest flow
-scales and with various densities. They compared SPH numerical results with analytical
-solutions, with other numerical methods [Fekken, 2004] and with experimental
-measurements.
+Finally, the boundary particles within the rigid body are moved by integrating Eq. 34 in time. The works of [Monaghan et al., 2003] and [Monaghan, 2005] show that this technique conserves both linear and angular momentum. [Bouscasse et al., 2013] presented successful validations of nonlinear water wave interaction with floating bodies in SPH comparing with experimental data from [Hadzić et al., 2005] that includes deformations in the free-surface due to the presence of floating boxes and the movement of those objects during the experiment (heave, surge and roll displacements). Several validations using DualSPHysics are performed in [Canelas et al., 2015] that analyse the buoyancy-driven motion with solid objects larger than the smallest flow scales and with various densities. They compared SPH numerical results with analytical solutions, with other numerical methods [Fekken, 2004] and with experimental measurements.
 
 ### Wave Generation
 
-Wave generation is included in this version of DualSPHysics, for long-crested waves
-only. In this way, the numerical model can be used to simulate a physical wave flume.
-Both regular and random waves can be generated. The following sections refer only to
-the piston-type wavemaker.
+Wave generation is included in this version of DualSPHysics, which includes piston- and flap-type long-crested wave generation. In this way, the numerical model can be used to simulate a physical wave flume. Both monochromatic (regular) and random waves can be generated. Second-order correction for bound long waves (sub-harmonics) is implemented for random waves with piston-type wave maker only. For regular waves, second-order correction (super-harmonics) is implemented for both piston- and flap-type wavemaker. The following sections refer only to the piston-type wavemaker. 
 
-First order wave generation
+#### First order wave generation
 
 The Biesel transfer functions express the relation between wave amplitude and
 wavemaker displacement [Biesel and Suquet, 1951], under the assumption of
@@ -562,7 +545,7 @@ piston movement is given by:
 <img src="https://i.imgur.com/IrxhSZv.png"/> (37)
 </p>
 
-Second order wave generation
+#### Second-order wave generation for monochromatic waves
 
 The implementation of a second order wavemaker theory will prevent the generation of
 spurious secondary waves. The second order wave generation theory implemented in
@@ -597,7 +580,7 @@ waves that complied with the condition given by HL2/d3 < 8π2/3. A specific warn
 implemented in DualSPHysics to inform the user whether or not this condition is
 fulfilled.
 
-First order wave generation of irregular waves
+#### First order wave generation of irregular waves
 
 Monochromatic waves are not representative of sea states that characterise real wave
 storm conditions. Sea waves are mostly random or irregular in nature. Irregular wave
@@ -662,7 +645,25 @@ A phase seed is also used and can be changed in DualSPHysics to obtain different
 random series of δi. Changing the phase seed allows generating different irregular wave
 time series both with the same significant wave height (Hm0) and peak period (Tp).
 
+#### Second-order bound long waves
+
+When natural waves are reproduced in a laboratory or in a numerical model the wave generator is normally controlled by a first-order signal. The wave set-down (bound long waves) generates drift velocities directed landwards under the crests and seawards under the troughs [Ottesen-Hansen et al., 1980]. However, at the wavemaker, there is no flow through the paddle, therefore the natural drift velocities are compensated by identical ones with opposite signs. The latter velocities create a progressive long wave that is not bound anymore but free. This phenomenon is called parasitic long waves and it results in an exaggeration of the long wave effects. Second-order wave generation is required in order to cancel out this parasitic long wave to achieve the drift velocities that characterise the set-down. Another long wave, called displacement long wave, is caused by finite wavemaker displacements away from the mean position. 
+
+The correction of the first-order wave generation at the wavemaker must be capable of compensating both parasitic long waves and displacement long waves. The method implemented in DualSPHysics is based on the solution for the control signal of the wavemaker that is described in [Barthel et al., 1993].
+
+### Passive and Active wave absorption 
+
+The use of wave absorption allows generating long time series of sea waves in relatively short domains with negligible wave reflection. Wave absorption techniques can be categorized as passive and active, respectively. Passive wave absorbers are usually required to damp the wave energy and to reduce reflection exerted by the boundary of the model domain. In active absorption systems, the wavemaker real-time displacement is corrected to cancel out the reflected waves and to damp the re-reflection phenomenon. Active wave absorption is implemented in DualSPHysics for a piston-type wavemaker only.
+
+#### Passive wave absorption 
+
+A damping zone is implemented in DualSPHysics as passive absorption system. The implemented damping system consists in gradually reducing the velocity of the particles at each time step according to their location, but using quadratic decay rather than exponential. In this way, the velocity is modified following
+
+
+
+
 ### Coupling with Discrete Element Method (DEM)
+
 The discrete element method (DEM) allows for the computation of rigid particle
 dynamics, by considering contact laws to account for interaction forces. The coupled
 numerical solution, based on SPH and DEM discretisations, resolves solid-solid and
