@@ -1,4 +1,3 @@
-# 3. SPH formulation
 
 First, the SPH formulation available on the new DualSPHysics code is summarised.  Users are referred to the relevant publications below:
 * Time integration scheme: Verlet [Verlet, 1967], Symplectic [Leimkhuler, 1996].
