@@ -659,7 +659,9 @@ The use of wave absorption allows generating long time series of sea waves in re
 
 A damping zone is implemented in DualSPHysics as passive absorption system. The implemented damping system consists in gradually reducing the velocity of the particles at each time step according to their location, but using quadratic decay rather than exponential. In this way, the velocity is modified following
 
-
+<p align="center">
+<img src="https://imgur.com/a/VV1xRV0"/> (45)
+</p>
 
 
 ### Coupling with Discrete Element Method (DEM)
