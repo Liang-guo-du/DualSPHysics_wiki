@@ -1,3 +1,4 @@
+# 3. SPH formulation
 First, the SPH formulation available on the new DualSPHysics code is summarised.  Users are referred to the relevant publications below:
 * Time integration scheme: Verlet [Verlet, 1967], Symplectic [Leimkhuler, 1996].
 * Variable time step [Monaghan and Kos, 1999].
@@ -28,9 +29,6 @@ Features that will be integrated soon on the CPU-GPU solver as future improvemen
 * Boundary Integral conditions [Domínguez et al., 2015].
 * Incompressible SPH [Chow et al., 2018].
 
-
-
-### SPH formulation
 Smoothed Particle Hydrodynamics (SPH) is a Lagrangian meshless method. The
 technique discretises a continuum using a set of material points or particles. When used
 for the simulation of fluid dynamics, the discretised Navier-Stokes equations are locally
