@@ -14,8 +14,9 @@ approaches for CPU and GPU with the accuracy, robustness and reliability shown b
 the SPHysics code. SPH simulations such as those in the SPHysics and DualSPHysics
 codes can be split in three main steps; 
 * generation of the neighbour list, 
-* computation of the forces between particles (solving momentum and continuity equations)and 
+* computation of the forces between particles (solving momentum and continuity equations) and 
 * the update of the physical quantities at the next time step. 
+
 Thus, running a simulation means executing these steps in an iterative manner:
 
 1. First step: Neighbour list (Cell-linked list described in [Domínguez et al., 2011]):
