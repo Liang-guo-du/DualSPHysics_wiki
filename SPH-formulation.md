@@ -660,13 +660,50 @@ The use of wave absorption allows generating long time series of sea waves in re
 A damping zone is implemented in DualSPHysics as passive absorption system. The implemented damping system consists in gradually reducing the velocity of the particles at each time step according to their location, but using quadratic decay rather than exponential. In this way, the velocity is modified following
 
 <p align="center">
-<img src="https://i.imgur.com/E7OZ3Ed.png"/> (45)
+<img src="https://i.imgur.com/SEXjEZ9.png"/> (45)
 </p>
 
+where v0 is the initial velocity of the particle i, v is the final velocity and f(x,Δt) is the reduction function defined as
 
+<p align="center">
+<img src="https://i.imgur.com/B1omhTk.png"/> (46)
+</p>
 
+where Δt is the duration of the last time step, x is position of the particles, x0 and x1 are the initial and final position of the damping zone, respectively. It is recommended to use one wavelength, L, as the length of the damping zone. The coefficient β modifies the reduction function that is applied to the velocity.
 
+#### Active wave absorption 
 
+The active wave absorption system implemented in DualSPHysics is based on the time-domain filtering technique that uses the free-surface elevation at the wavemaker position as feedback for the control of the wavemaker displacement. The target wavemaker position e(t) is corrected in real time in order to avoid reflection at the wavemaker. It is necessary to estimate the free-surface elevation of the reflected waves, ηR, to be absorbed, by comparing the target incident free-surface elevation, ηI, with the measured one in front of the wavemaker, ηSPH. This is measured at 4-10·hSPH from the wavemaker. The reflected free-surface elevation can be expressed as
+
+<p align="center">
+<img src="https://i.imgur.com/xZHfwS1.png"/> (47)
+</p>
+
+The wavemaker velocity is then modified to match the velocity induced by the wave that will be absorbed. For a piston-type wavemaker the wave absorption is performed using linear long wave theory [Schaffer and Klopman, 2000; Dean and Dalrymple, 1991]. The velocity correction to absorb the reflected waves, UR, is expressed as
+
+<p align="center">
+<img src="https://i.imgur.com/rbQWWOO.png"/> (48)
+</p>
+
+where ηR is the free-surface elevation of the reflected waves and g is the gravitational acceleration. The corrected wavemaker velocity UC is the subtraction of UR from the theoretical wave maker velocity UI. This UI is the derivative in time of the wavemaker displacement e(t). Here the implementation details are expressed for the regular wave case. The theoretical velocity at time t, UI(t), can be computed as: 
+
+<p align="center">
+<img src="https://i.imgur.com/BOHNsjX.png"/> (49)
+</p>
+
+The free-surface elevation in front of the wavemaker is measured, the target incident free-surface elevation is calculated and therefore the velocity correction UR is estimated. The corrected wavemaker velocity at the instant t+dt can be expressed as
+
+<p align="center">
+<img src="https://i.imgur.com/x5BTFSp.png"/> (50)
+</p>
+
+The wavemaker position at t+dt is then corrected using the following expression
+
+<p align="center">
+<img src="https://i.imgur.com/WMWWQ8E.png"/> (51)
+</p>
+
+Small deviations of the mean water level from the zero can imply accumulations in time leading to a drift of the wavemaker from its initial position that will grow indefinitely. In order to prevent this drift, the wavemaker should be forced back to its zero position. Hence, a drift correction algorithm is implemented in the code. The algorithm checks when the 80% of the maximum forward or backward stroke is reached (80% was assumed as default value but it can be modified by the user). If this happens the wave board is pushed/pulled slowly back, while continuing to generate the target waves, in such a way that its average position will finally correspond to its initial zero-position (i.e. at the beginning of the simulation). A smoothed transition, in form of a power function, is used to prevent abrupt changes in the wavemaker displacement.
 
 ### Coupling with Discrete Element Method (DEM)
 
@@ -683,7 +720,7 @@ somewhere between perfectly inelastic and perfectly elastic, usually quantified 
 normal restitution coefficient
 
 <p align="center">
-<img src="https://i.imgur.com/FI6n4e6.png"/> (45)
+<img src="https://i.imgur.com/FI6n4e6.png"/> (52)
 </p>
 
 The total forces are decomposed into a repulsion force, Fr, arising from the elastic
@@ -704,19 +741,19 @@ interacting particles.
 The normal force is given by
 
 <p align="center">
-<img src="https://i.imgur.com/JSWjteL.png"/> (46)
+<img src="https://i.imgur.com/JSWjteL.png"/> (53)
 </p>
 
 where the stiffness is given by
 
 <p align="center">
-<img src="https://i.imgur.com/E09Sbv7.png"/> (47)
+<img src="https://i.imgur.com/E09Sbv7.png"/> (54)
 </p>
 
 and the damping coefficient is
 
 <p align="center">
-<img src="https://i.imgur.com/3SywlkB.png"/> (48)
+<img src="https://i.imgur.com/3SywlkB.png"/> (55)
 </p>
 
 where <img src="https://i.imgur.com/qJFoGej.png" /> is the unit vector between the centers of particles i and j.
@@ -729,7 +766,7 @@ to control the dissipation of each contact. The reduced radius and reduced elast
 given by
 
 <p align="center">
-<img src="https://i.imgur.com/NFNi4cg.png"/> (49)
+<img src="https://i.imgur.com/NFNi4cg.png"/> (56)
 </p>
 
 where Ri is simply the particle radius, Ei is the Young modulus and νp is the Poisson
@@ -738,7 +775,7 @@ coefficient of material i, as specified in the Floating_Materials.xml.
 This results in another restriction to the time-step, adding
 
 <p align="center">
-<img src="https://i.imgur.com/CBkNVwo.png"/> (50)
+<img src="https://i.imgur.com/CBkNVwo.png"/> (57)
 </p>
 
 to the existing CFL restrictions (Eq. 30), where vn is the normal relative velocity and M*
@@ -747,13 +784,13 @@ is the reduced mass of the system where there is a contact.
 Regarding tangential contacts, friction is modelled using the same model:
 
 <p align="center">
-<img src="https://i.imgur.com/TEWT5wl.png"/> (51)
+<img src="https://i.imgur.com/TEWT5wl.png"/> (58)
 </p>
 
 where the stiffness and damping constants are derived to be
 
 <p align="center">
-<img src="https://i.imgur.com/I0k85MJ.png"/> (52)
+<img src="https://i.imgur.com/I0k85MJ.png"/> (59)
 </p>
 
 as to insure internal consistency of the time scales between normal and tangential
@@ -764,7 +801,7 @@ Coulomb friction law, modified with a sigmoidal function in order to make it
 continuous around the origin regarding the tangential velocity:
 
 <p align="center">
-<img src="https://i.imgur.com/KeEhBWb.png"/> (53)
+<img src="https://i.imgur.com/KeEhBWb.png"/> (60)
 </p>
 
 where μIJ is the friction coefficient at the contact of object I and object J and is simply
@@ -800,7 +837,7 @@ stress τd which accounts for the collision of larger fraction granulate. The to
 stress can be expressed as
 
 <p align="center">
-<img src="https://i.imgur.com/3i7pXVb.png"/> (54)
+<img src="https://i.imgur.com/3i7pXVb.png"/> (61)
 </p>
 
 The first two parameters on the right-hand side of the equation define the yield strength
@@ -827,28 +864,28 @@ The yield surface prediction is modelled using the Drucker-Prager (DP) model. Th
 can be written in a general form as [Fourtakas and Rogers, 2016]
 
 <p align="center">
-<img src="https://i.imgur.com/YTi6Wm0.png"/> (55)
+<img src="https://i.imgur.com/YTi6Wm0.png"/> (62)
 </p>
 
 The parameters a and κ can be determined by projecting the Drucker-Prager onto the
 Mohr-Coulomb yield criterion in a deviatoric plane
 
 <p align="center">
-<img src="https://i.imgur.com/H4aCkE8.png"/> (56)
+<img src="https://i.imgur.com/H4aCkE8.png"/> (63)
 </p>
 
 where φ is the internal friction and c the cohesion of the material. Finally, yielding will
 occur when the following equation is satisfied
 
 <p align="center">
-<img src="https://i.imgur.com/AryWAwY.png"/> (57)
+<img src="https://i.imgur.com/AryWAwY.png"/> (64)
 </p>
 
 The multi-phase model uses the Herschel-Bulkley-Papanastasiou (HBP) [Papanastasiou,
 1987] rheological characteristics to model the yielded region. The HBP model reads
 
 <p align="center">
-<img src="https://i.imgur.com/OJosS1C.png"/> (58)
+<img src="https://i.imgur.com/OJosS1C.png"/> (65)
 </p>
 
 where m controls the exponential growth of stress, n is the power law index and μ is the
@@ -878,7 +915,7 @@ controlled through the volume fraction of the mixture by using a concentration v
 fraction in the form of
 
 <p align="center">
-<img src="https://i.imgur.com/iRMnidK.png"/> (59)
+<img src="https://i.imgur.com/iRMnidK.png"/> (66)
 </p>
 
 where the summation is defined within the support of the kernel and jsat refers to the
@@ -888,7 +925,7 @@ We use a suspension viscosity based on the Vand experimental colloidal suspensio
 equation [Vand, 1948] of sediment in a fluid by
 
 <p align="center">
-<img src="https://i.imgur.com/DxHFbRQ.png"/> (60)
+<img src="https://i.imgur.com/DxHFbRQ.png"/> (67)
 </p>
 
 assuming an isotropic material with spherically shaped sediment particles. Eq. 60 is
