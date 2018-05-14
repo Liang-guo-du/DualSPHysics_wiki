@@ -35,7 +35,7 @@
     * [12.9 WAVESPISTON](12.-Testcases#129-wavespiston)
     * [12.10 WAVESPISTONAWAS](12.-Testcases#1210-wavespistonawas)
     * [12.11 FLOATING](12.-Testcases#1211-floating)
-    * [12.12 FLOATINGWAVES](12.11 FLOATING)
+    * [12.12 FLOATINGWAVES](12.-Testcases#1212-floatingwaves)
     * [12.13 PUMP](12.-Testcases#1213-pump)
     * [12.14 DEM](12.-Testcases#1214-dem)
 13. [How to modify DualSPHysics for your application](13.-How-to-modify-DualSPHysics-for-your-application)
