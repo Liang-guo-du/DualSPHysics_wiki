@@ -11,7 +11,7 @@
    * [3.8 Boundary Conditions](3.-SPH-formulation#38-boundary-conditions)
    * [3.9 Wave Generation](3.-SPH-formulation#39-wave-generation)
    * [3.10 Passive and Active wave absorption](3.-SPH-formulation#310-passive-and-active-wave-absorption)
-   * [3.11 Coupling with Discrete Element Method (DEM)](3.-SPH-formulation#311-coupling-with-discrete-element-method-dem)
+   * [3.11 Coupling with DEM](3.-SPH-formulation#311-coupling-with-discrete-element-method-dem)
    * [3.12 Multi-phase: liquid-sediment](3.-SPH-formulation#312-multi-phase-two-phase-liquid-sediment-implementation-in-dualsphysics)
    * [3.13 Multi-phase: liquid-gas](3.-SPH-formulation#313-multi-phase-two-phase-liquid-gas-implementation-in-dualsphysics)
 4. [CPU and GPU implementation](4.-CPU-and-GPU-implementation)
