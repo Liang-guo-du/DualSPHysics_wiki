@@ -54,4 +54,3 @@
 16. [References](16.-References)
 17. [Licenses](17.-Licenses)
 18. [FAQ](18.-FAQ)
-19. [CORRADO](19.-CORRADO)
