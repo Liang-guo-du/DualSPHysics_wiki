@@ -45,7 +45,7 @@
     * [12.12 FLOATINGWAVES](12.-Testcases#1212-floatingwaves)
     * [12.13 PUMP](12.-Testcases#1213-pump)
     * [12.14 DEM](12.-Testcases#1214-dem)
-    * [12.15 POISEUILLE](12.-Testcases#1212-floatingwaves)
+    * [12.15 POISEUILLE](12.-Testcases#1215-poiseuille)
     * [12.16 EXTRA EXAMPLES](12.-Testcases#1216-extra-examples)
     * [12.17 MULTIPHASE EXAMPLES](12.-Testcases#1217-multiphase-examples)
 13. [How to modify DualSPHysics for your application](13.-How-to-modify-DualSPHysics-for-your-application)
