@@ -14,7 +14,7 @@
 <img src="http://design.sphysics.org/img/dualsphysics_demonstration.gif" alt="DualSPHysics" width="400">
 </p>
 <hr>
-Welcome to the DualSPHysics Wiki. Here you will find documentation and information about the DualSPHysics project: codes, structure, workflow, compilation, working exmples, etc.
+Welcome to the DualSPHysics Wiki. Here you will find documentation and information about the DualSPHysics project: codes, structure, workflow, compilation, working examples, etc.
 
 ## Suggestions and errors in the Wiki
 If you have suggestions (a new section, corrections or contributions) please notify it using the [ISSUES section of the repository](https://github.com/DualSPHysics/DualSPHysics/issues). Please include something like [WIKI] into the title to help us to prioritize the work.
