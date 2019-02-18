@@ -16,7 +16,7 @@
    * [3.13 Multi-phase: liquid-gas](3.-SPH-formulation#313-multi-phase-two-phase-liquid-gas-implementation-in-dualsphysics)
    * [3.14 Coupling with Project Chrono](3.-SPH-formulation#314-coupling-dualsphysics-with-project-chrono)
    * [3.15 Coupling with wave propagation models](3.-SPH-formulation#315-coupling-with-wave-propagation-models)
-   * [3.16 Open boundary conditions: inlet & outlet](3.-SPH-formulation#316-open-boundary-conditions:-inlet-&-outlet)
+   * [3.16 Open boundary conditions](3.-SPH-formulation#316-open-boundary-conditions)
 4. [CPU and GPU implementation](4.-CPU-and-GPU-implementation)
 5. [Running DualSPHysics](5.-Running-DualSPHysics)
 6. [DualSPHysics open-source code](6.-DualSPHysics-open‐source-code)
