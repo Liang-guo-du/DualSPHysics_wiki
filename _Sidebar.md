@@ -40,7 +40,7 @@
     * [12.5 WAVECOUPLING EXAMPLES](12.-Testcases#125-wavecoupling-examples)
     * [12.6 INLETOUTLET EXAMPLES](12.-Testcases#126-inletoutlet-examples)
 13. [How to modify DualSPHysics for your application](13.-How-to-modify-DualSPHysics-for-your-application)
-14. [New on DualSPHysics v4.2](14.-New-on-DualSPHysics-v4.2)
+14. [New on DualSPHysics](14.-New-on-DualSPHysics)
 15. [DualSPHysics future](15.-DualSPHysics-future)
 16. [References](16.-References)
 17. [Licenses](17.-Licenses)
