@@ -5,7 +5,7 @@
    * [3.2 Momentum Equation](3.-SPH-formulation#32-momentum-equation)
    * [3.3 Continuity Equation](3.-SPH-formulation#33-continuity-equation)
    * [3.4 Equation of State](3.-SPH-formulation#34-equation-of-state)
-   * [3.5 DeltaSPH](3.-SPH-formulation#35-deltasph)
+   * [3.5 Density diffusion term](3.-SPH-formulation#35-density-diffusion-term)
    * [3.6 Shifting algorithm](3.-SPH-formulation#36-shifting-algorithm)
    * [3.7 Time stepping](3.-SPH-formulation#37-time-stepping)
    * [3.8 Boundary Conditions](3.-SPH-formulation#38-boundary-conditions)
