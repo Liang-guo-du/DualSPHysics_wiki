@@ -26,7 +26,6 @@
    * [5.4 Processing](5.-Running-DualSPHysics#54-processing) 
    * [5.5 Postprocessing](5.-Running-DualSPHysics#55-postprocessing)
    * [5.6 Graphical User Interface](5.-Running-DualSPHysics#56-graphical-user-interface)
-
 6. [Compiling DualSPHysics](6.-Compiling-DualSPHysics)
    * [6.1 Location of the source code](6.-Compiling-DualSPHysics#61-location-of-the-source-code)
    * [6.2 Structure of the code](6.-Compiling-DualSPHysics#62-structure-of-the-code)
