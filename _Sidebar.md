@@ -1,7 +1,7 @@
 1. [Introduction](1.-Introduction)
 2. [Developers and institutions](2.-Developers-and-Institutions)
 3. [SPH formulation](3.-SPH-formulation)
-   * [3.1 The Smoothing Kernel](3.-SPH-formulation#31-the-smoothing-kernel)
+   * [3.1 Smoothing Kernel](3.-SPH-formulation#31-smoothing-kernel)
    * [3.2 Momentum Equation](3.-SPH-formulation#32-momentum-equation)
    * [3.3 Continuity Equation](3.-SPH-formulation#33-continuity-equation)
    * [3.4 Equation of State](3.-SPH-formulation#34-equation-of-state)
