@@ -35,8 +35,8 @@
                 <li><a href="../3.-SPH-formulation#313-coupling-with-wave-propagation-models">3.13 Coupling with wave propagation models</a></li>
                 <li><a href="../3.-SPH-formulation#314-coupling-dualsphysics-with-moordyn">3.14 Coupling DualSPHysics with MoorDyn</a></li>
                 <li><a href="../3.-SPH-formulation#315-open-boundary-conditions">3.15 Open boundary conditions</a></li>
-                <li><a href="../3.-SPH-formulation#316-multi-phase-two-phase-liquid-gas-implementation-in-dualsphysics">3.16 Multi-phase: Two-phase liquid-gas implementation in DualSPHysics</a></li>
-                <li><a href="../3.-SPH-formulation#317-multi-phase-two-phase-liquid-sediment-implementation-in-dualsphysics">3.17 Multi-phase: Two-phase liquid-sediment implementation in DualSPHysics</a></li>
+                <li><a href="../3.-SPH-formulation#316-multi-phase-two-phase-liquid-gas-implementation-in-dualsphysics">3.16 Multi-phase: liquid-gas</a></li>
+                <li><a href="../3.-SPH-formulation#317-multi-phase-two-phase-liquid-sediment-implementation-in-dualsphysics">3.17 Multi-phase: liqued-sediment</a></li>
             </ul>
         </li>
         <li>
