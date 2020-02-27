@@ -16,5 +16,51 @@
 <hr>
 Welcome to the DualSPHysics Wiki. Here you will find documentation and information about the DualSPHysics project: codes, structure, workflow, compilation, working examples, etc.
 
+
+## Table of Contents
+<div>
+    <ul>
+        <li>
+            <a href="#">1 Test</a>
+            <ul>
+                <li><a href="#">1.1 Test</a></li>
+                <li><a href="#">1.2 Test</a></li>
+                <li><a href="#">1.3 Test</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">3 Test</a>
+            <ul>
+                <li><a href="#">2.1 Test</a></li>
+            </ul>
+            <a href="#">2 Test</a>
+            <ul>
+                <li><a href="#">2.1 Test</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">3 Test</a>
+            <ul>
+                <li><a href="../3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a></li>
+            </ul>
+        </li>
+        <li>
+
+
+        </li>
+        <li>
+            <a href="#">4 Test</a>
+        </li>
+        <li>
+            <a href="#">5 Test</a>
+            <ul>
+                <li><a href="#">5.1 Test</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+ tendrías que poner <a href="../3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a>
+
+
 ## Suggestions and errors in the Wiki
 If you have suggestions (a new section, corrections or contributions) please notify it using the [ISSUES section of the repository](https://github.com/DualSPHysics/DualSPHysics/issues). Please include something like [WIKI] into the title to help us to prioritize the work.
