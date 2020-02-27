@@ -31,6 +31,16 @@ Welcome to the DualSPHysics Wiki. Here you will find documentation and informati
             <ul>
                 <li><a href="../3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a></li>
                 <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
+                <li><a href="../3.-SPH-formulation#33-continuity-equation">3.3 Continuity equation</a></li>
+                <li><a href="../3.-SPH-formulation#34-equation-of-state">3.4 Equation of state</a></li>
+                <li><a href="../3.-SPH-formulation#35-density-diffusion-term">3.5 Density diffusion term</a></li>
+                <li><a href="../3.-SPH-formulation#36-shifting-algorithm">3.6 Shifting algorithm</a></li>
+                <li><a href="../3.-SPH-formulation#37-time-stepping">3.7 Time stepping</a></li>
+                <li><a href="../3.-SPH-formulation#38-boundary-conditions">3.8 Boundary conditions</a></li>
+                <li><a href="../3.-SPH-formulation#39-wave-generation">3.9 Wave generation</a></li>
+                <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
+                <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
+
             </ul>
         </li>
         <li>
