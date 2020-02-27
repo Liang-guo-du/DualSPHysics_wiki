@@ -1,9 +1,6 @@
 <h1 align="center">
   <br>
   <a href="http://dual.sphysics.org/"><img src="http://design.sphysics.org/img/logo_dualsphysics.png" alt="DualSPHysics" width="300"></a>
-  <br>
-  DualSPHysics
-  <br>
 </h1>
 
 <h4 align="center"><a href="https://http://www.dual.sphysics.org" target="_blank">DualSPHysics</a> is based on the Smoothed Particle Hydrodynamics model named <a href="https://http://www.sphysics.org" target="_blank">SPHysics</a>.</h4>
