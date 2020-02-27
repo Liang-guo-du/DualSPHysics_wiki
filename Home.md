@@ -38,21 +38,14 @@ Welcome to the DualSPHysics Wiki. Here you will find documentation and informati
                 <li><a href="../3.-SPH-formulation#37-time-stepping">3.7 Time stepping</a></li>
                 <li><a href="../3.-SPH-formulation#38-boundary-conditions">3.8 Boundary conditions</a></li>
                 <li><a href="../3.-SPH-formulation#39-wave-generation">3.9 Wave generation</a></li>
-                <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
-                <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
-
+                <li><a href="../3.-SPH-formulation#310-passive-and-active-wave-absorption">3.10 Passive and active wave absorption</a></li>
+                <li><a href="../3.-SPH-formulation#311-coupling-with-discrete-element-method-dem">3.11 Coupling with Discrete Element Method (DEM)</a></li>
             </ul>
         </li>
         <li>
             <a href="#">4 Test</a>
         </li>
-        <li>
-            <a href="#">5 Test</a>
-            <ul>
-                <li><a href="#">5.1 Test</a></li>
-            </ul>
-        </li>
-    </ul>
+       </ul>
 </div>
 
 
