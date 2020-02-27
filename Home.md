@@ -10,10 +10,6 @@
 
 <h4 align="center">The code is developed to study free-surface flow phenomena where Eulerian methods can be difficult to apply, such as waves or impact of dam-breaks on off-shore structures. DualSPHysics is a set of C++, <a href="https://developer.nvidia.com/cuda-zone" target="_blank">CUDA</a> and Java codes designed to deal with real-life engineering problems.</h4>
 
-<p align="center">
-<img src="http://design.sphysics.org/img/dualsphysics_demonstration.gif" alt="DualSPHysics" width="400">
-</p>
-<hr>
 Welcome to the DualSPHysics Wiki. Here you will find documentation and information about the DualSPHysics project: codes, structure, workflow, compilation, working examples, etc.
 
 
