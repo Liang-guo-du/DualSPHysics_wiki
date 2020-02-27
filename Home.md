@@ -21,32 +21,17 @@ Welcome to the DualSPHysics Wiki. Here you will find documentation and informati
 <div>
     <ul>
         <li>
-            <a href="#">1 Test</a>
-            <ul>
-                <li><a href="#">1.1 Test</a></li>
-                <li><a href="#">1.2 Test</a></li>
-                <li><a href="#">1.3 Test</a></li>
-            </ul>
+            <a href="../1.-Introduction">1. Introduction</a>
         </li>
         <li>
-            <a href="#">3 Test</a>
-            <ul>
-                <li><a href="#">2.1 Test</a></li>
-            </ul>
-            <a href="#">2 Test</a>
-            <ul>
-                <li><a href="#">2.1 Test</a></li>
-            </ul>
+            <a href="../2.-Developers-and-Institutions">2. Developers and Institutions</a>
         </li>
         <li>
-            <a href="#">3 Test</a>
+            <a href="../3.-SPH-formulation">3. SPH formulation</a>
             <ul>
                 <li><a href="../3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a></li>
+                <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
             </ul>
-        </li>
-        <li>
-
-
         </li>
         <li>
             <a href="#">4 Test</a>
@@ -59,7 +44,7 @@ Welcome to the DualSPHysics Wiki. Here you will find documentation and informati
         </li>
     </ul>
 </div>
- tendrías que poner <a href="../3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a>
+
 
 
 ## Suggestions and errors in the Wiki
