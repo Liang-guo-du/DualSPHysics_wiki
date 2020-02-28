@@ -1,4 +1,4 @@
-[Home](https://github.com/DualSPHysics/DualSPHysics/wiki)
+[Index](https://github.com/DualSPHysics/DualSPHysics/wiki)
 1. [Introduction](1.-Introduction)
 2. [Developers and institutions](2.-Developers-and-Institutions)
 3. [SPH formulation](3.-SPH-formulation)
