@@ -18,9 +18,9 @@
             <a href="../2.-Developers-and-Institutions">2. Developers and Institutions</a>
         </li>
         <li>
-            <a href="../3.-SPH-formulation">3. SPH formulation</a>
+            <a href="3.-SPH-formulation">3. SPH formulation</a>
             <ul>
-                <li><a href="../3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a></li>
+                <li><a href="3.-SPH-formulation#31-smoothing-kernel">3.1 Smoothing kernel</a></li>
                 <li><a href="../3.-SPH-formulation#32-momentum-equation">3.2 Momentum equation</a></li>
                 <li><a href="../3.-SPH-formulation#33-continuity-equation">3.3 Continuity equation</a></li>
                 <li><a href="../3.-SPH-formulation#34-equation-of-state">3.4 Equation of state</a></li>
