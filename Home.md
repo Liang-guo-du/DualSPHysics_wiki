@@ -53,8 +53,7 @@
                 <li><a href="../5.-Running-DualSPHysics#56-graphical-user-interface">5.6 Graphical User Interface</a></li>
             </ul>
         </li>
-
-       <li>
+        <li>
             <a href="../6.-Compiling-DualSPHysics">6. Compiling DualSPHysics</a>
             <ul>
                 <li><a href="../6.-Compiling-DualSPHysics#61-location-of-the-source-code">6.1 Location of the source code</a></li>
@@ -64,8 +63,7 @@
                 <li><a href="../6.-Compiling-DualSPHysics#65-compiling-using-cmake">6.5 Compiling using CMAKE</a></li>
             </ul>
         </li>
-
-       <li>
+        <li>
             <a href="../5.-Running-DualSPHysics">5. Running DualSPHysics</a>
             <ul>
                 <li><a href="../5.-Running-DualSPHysics#51-directory-structure">5.1 Directory structure</a></li>
