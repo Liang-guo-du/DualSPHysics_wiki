@@ -66,13 +66,13 @@
         <li>
             <a href="../7.-Testcases">7. Testcases</a>
             <ul>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
-                <li><a href="../7.-Testcases#71-main-examples">7.1 Main examples</a></li>
+                <li><a href="../7.-Testcases#71-main-examples">7.1 main examples</a></li>
+                <li><a href="../7.-Testcases#72-extra-examples">7.2 extra examples</a></li>
+                <li><a href="../7.-Testcases#73-chrono-examples">7.3 chrono examples</a></li>
+                <li><a href="../7.-Testcases#74-moordyn-examples">7.4 moordyn examples</a></li>
+                <li><a href="../7.-Testcases#75-wavecoupling-examples">7.5 wavecoupling examples</a></li>
+                <li><a href="../7.-Testcases#76-inletoutlet-examples">7.6 inletoutlet examples</a></li>
+                <li><a href="../7.-Testcases#77-multiphase-examples">7.7 multiphase examples</a></li>
             </ul>
         </li>
         <li>
