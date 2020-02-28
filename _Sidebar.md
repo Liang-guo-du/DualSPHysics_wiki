@@ -6,7 +6,7 @@
 5. [Running DualSPHysics](5.-Running-DualSPHysics)
 6. [Compiling DualSPHysics](6.-Compiling-DualSPHysics)
 7. [Testcases](7.-Testcases)
-8. [How to modify DualSPHysics for your application](8.-How-to-modify-DualSPHysics-for-your-application)
+8. [How to modify DualSPHysics](8.-How-to-modify-DualSPHysics-for-your-application)
 9. [New on DualSPHysics](9.-New-on-DualSPHysics)
 10. [DualSPHysics future](10.-DualSPHysics-future)
 11. [References](11.-References)
