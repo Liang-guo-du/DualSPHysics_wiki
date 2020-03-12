@@ -72,7 +72,8 @@
                 <li><a href="7.-Testcases#74-moordyn-examples">7.4 moordyn examples</a></li>
                 <li><a href="7.-Testcases#75-wavecoupling-examples">7.5 wavecoupling examples</a></li>
                 <li><a href="7.-Testcases#76-inletoutlet-examples">7.6 inletoutlet examples</a></li>
-                <li><a href="7.-Testcases#77-multiphase-examples">7.7 multiphase examples</a></li>
+                <li><a href="7.-Testcases#77-mdbc-examples">7.7 mdbc examples</a></li>
+                <li><a href="7.-Testcases#78-multiphase-examples">7.8 multiphase examples</a></li>
             </ul>
         </li>
         <li>
