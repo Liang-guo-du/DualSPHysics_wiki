@@ -33,7 +33,7 @@
                 <li><a href="3.-SPH-formulation#311-coupling-with-discrete-element-method-dem">3.11 Coupling with Discrete Element Method (DEM)</a></li>
                 <li><a href="3.-SPH-formulation#312-coupling-dualsphysics-with-project-chrono">3.12 Coupling with Project Chrono</a></li>
                 <li><a href="3.-SPH-formulation#313-coupling-with-wave-propagation-models">3.13 Coupling with wave propagation models</a></li>
-                <li><a href="3.-SPH-formulation#314-coupling-dualsphysics-with-moordyn">3.14 Coupling DualSPHysics with MoorDyn</a></li>
+                <li><a href="3.-SPH-formulation#314-coupling-with-moordyn">3.14 Coupling with MoorDyn</a></li>
                 <li><a href="3.-SPH-formulation#315-open-boundary-conditions">3.15 Open boundary conditions</a></li>
                 <li><a href="3.-SPH-formulation#316-multi-phase-two-phase-liquid-gas-implementation-in-dualsphysics">3.16 Multi-phase: liquid-gas</a></li>
                 <li><a href="3.-SPH-formulation#317-multi-phase-two-phase-liquid-sediment-implementation-in-dualsphysics">3.17 Multi-phase: liqued-sediment</a></li>
