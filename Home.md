@@ -91,9 +91,6 @@
         <li>
             <a href="12.-Licenses">12. Licenses</a>
         </li>
-        <li>
-            <a href="13.-FAQ">13. FAQ</a>
-        </li>
        </ul>
 </div>
 
