@@ -57,11 +57,12 @@
         <li>
             <a href="6.-Compiling-DualSPHysics">6. Compiling DualSPHysics</a>
             <ul>
-                <li><a href="6.-Compiling-DualSPHysics#61-location-of-the-source-code">6.1 Location of the source code</a></li>
-                <li><a href="6.-Compiling-DualSPHysics#62-structure-of-the-code">6.2 Structure of the code</a></li>
-                <li><a href="6.-Compiling-DualSPHysics#63-compiling-on-windows-using-vs">6.3 Compiling on Windows using Visual Studio</a></li>
-                <li><a href="6.-Compiling-DualSPHysics#64-compiling-on-linux">6.4 Compiling on Linux</a></li>
-                <li><a href="6.-Compiling-DualSPHysics#65-compiling-using-cmake">6.5 Compiling using CMAKE</a></li>
+                <li><a href="6.-Compiling-DualSPHysics#61-pre-requisites-software-needed-before-you-compile">6.1 Pre-requisites: Software needed before you compile</a></li>
+                <li><a href="6.-Compiling-DualSPHysics#62-location-of-the-source-code">6.2 Location of the source code</a></li>
+                <li><a href="6.-Compiling-DualSPHysics#63-structure-of-the-code">6.3 Structure of the code</a></li>
+                <li><a href="6.-Compiling-DualSPHysics#64-compiling-on-windows-using-visualstudio">6.4 Compiling on Windows using VisualStudio</a></li>
+                <li><a href="6.-Compiling-DualSPHysics#65-compiling-on-linux">6.5 Compiling on Linux</a></li>
+                <li><a href="6.-Compiling-DualSPHysics#66-compiling-using-cmake">6.6 Compiling using CMAKE</a></li>
             </ul>
         </li>
         <li>
