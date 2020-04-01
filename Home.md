@@ -93,10 +93,11 @@
         <li>
             <a href="12.-Licenses">12. Licenses</a>
         </li>
+        <li>
+            <a href="13.-FAQ">13. FAQ</a>
+        </li>
        </ul>
 </div>
-
-
 
 ## Suggestions and errors in the Wiki
 If you have suggestions (a new section, corrections or contributions) please notify it using the [ISSUES section of the repository](https://github.com/DualSPHysics/DualSPHysics/issues). Please include something like [WIKI] into the title to help us to prioritize the work.
