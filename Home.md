@@ -82,7 +82,7 @@
             <a href="8.-How-to-modify-DualSPHysics-for-your-application">8. How to modify DualSPHysics for your application</a>
         </li>
         <li>
-            <a href="9.-New-on-DualSPHysics">9. New on DualSPHysics</a>
+            <a href="9.-New-in-DualSPHysics">9. New in DualSPHysics</a>
         </li>
         <li>
             <a href="10.-DualSPHysics-future">10. DualSPHysics future</a>
