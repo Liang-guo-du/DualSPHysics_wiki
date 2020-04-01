@@ -45,12 +45,13 @@
         <li>
             <a href="5.-Running-DualSPHysics">5. Running DualSPHysics</a>
             <ul>
-                <li><a href="5.-Running-DualSPHysics#51-directory-structure">5.1 Directory structure</a></li>
-                <li><a href="5.-Running-DualSPHysics#52-running-the-dualSPHysics-code">5.2 Running the DualSPHysics code</a></li>
-                <li><a href="5.-Running-DualSPHysics#53-preprocessing">5.3 Preprocessing</a></li>
-                <li><a href="5.-Running-DualSPHysics#54-processing">5.4 Processing</a></li>
-                <li><a href="5.-Running-DualSPHysics#55-postprocessing">5.5 Postprocessing</a></li>
-                <li><a href="5.-Running-DualSPHysics#56-graphical-user-interface">5.6 Graphical User Interface</a></li>
+                <li><a href="5.-Running-DualSPHysics#51-pre-requisites-before-you-run">5.1 Directory structure</a></li>
+                <li><a href="5.-Running-DualSPHysics#52-directory-structure">5.1 Directory structure</a></li>
+                <li><a href="5.-Running-DualSPHysics#53-running-the-dualsphysics-code">5.2 Running the DualSPHysics code</a></li>
+                <li><a href="5.-Running-DualSPHysics#54-preprocessing">5.3 Preprocessing</a></li>
+                <li><a href="5.-Running-DualSPHysics#55-processing">5.4 Processing</a></li>
+                <li><a href="5.-Running-DualSPHysics#56-postprocessing">5.5 Postprocessing</a></li>
+                <li><a href="5.-Running-DualSPHysics#57-graphical-user-interface">5.6 Graphical User Interface</a></li>
             </ul>
         </li>
         <li>
