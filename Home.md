@@ -75,7 +75,8 @@
                 <li><a href="7.-Testcases#75-wavecoupling-examples">7.5 wavecoupling examples</a></li>
                 <li><a href="7.-Testcases#76-inletoutlet-examples">7.6 inletoutlet examples</a></li>
                 <li><a href="7.-Testcases#77-mdbc-examples">7.7 mdbc examples</a></li>
-                <li><a href="7.-Testcases#78-multiphase-examples">7.8 multiphase examples</a></li>
+                <li><a href="7.-Testcases#78-multiphase-liquidgas-examples">7.8 multiphase liquidgas examples</a></li>
+                <li><a href="7.-Testcases#79-multiphase-nnewtonian-examples">7.9 multiphase nnewtonian examples</a></li>
             </ul>
         </li>
         <li>
