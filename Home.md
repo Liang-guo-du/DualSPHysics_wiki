@@ -35,8 +35,8 @@
                 <li><a href="3.-SPH-formulation#313-coupling-with-wave-propagation-models">3.13 Coupling with wave propagation models</a></li>
                 <li><a href="3.-SPH-formulation#314-coupling-with-moordyn">3.14 Coupling with MoorDyn</a></li>
                 <li><a href="3.-SPH-formulation#315-open-boundary-conditions">3.15 Open boundary conditions</a></li>
-                <li><a href="3.-SPH-formulation#316-multi-phase-two-phase-liquid-gas">3.16 Multi-phase: liquid-gas</a></li>
-                <li><a href="3.-SPH-formulation#317-multi-phase-rheology-models-and non-newtonian-formulations">3.17 Multi-phase: Rheology models and non-Newtonian formulations</a></li>
+                <li><a href="3.-SPH-formulation#316-two-phase-liquid-gas">3.16 Two-phase liquid-gas</a></li>
+                <li><a href="3.-SPH-formulation#317-rheology-models,-non-newtonian-formulations-and-multi-phase-flows">3.17 Rheology models, non-Newtonian formulations and multi-phase flows</a></li>
             </ul>
         </li>
         <li>
