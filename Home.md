@@ -37,6 +37,7 @@
                 <li><a href="3.-SPH-formulation#315-open-boundary-conditions">3.15 Open boundary conditions</a></li>
                 <li><a href="3.-SPH-formulation#316-two-phase-liquid-gas">3.16 Two-phase liquid-gas</a></li>
                 <li><a href="3.-SPH-formulation#317-rheology-models-and-non-newtonian-formulations">3.17 Rheology models and non-Newtonian formulations</a></li>
+                <li><a href="3.-SPH-formulation#318-flexible-fluid-structure-interaction">3.18 Flexible Fluid-Structure Interaction</a></li>
             </ul>
         </li>
         <li>
